@@ -1,15 +1,20 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Retiro Empresarias de la Salud y el Bienestar · Mayo 2026</title>
-  <meta name="description" content="Retiro formativo II para empresarias de la salud y el bienestar. 18-20 de mayo 2026. Hotel Mar de Fulles, Castellón." />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%232d4a2d'/%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%23c9a84c' stroke-width='1'/%3E%3Cpath d='M9 21 L9 11 L13 17 L16 12 L19 17 L23 11 L23 21' stroke='%23c9a84c' stroke-width='1.8' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <meta name="description"
+    content="Retiro formativo II para empresarias de la salud y el bienestar. 18-20 de mayo 2026. Hotel Mar de Fulles, Castellón." />
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%232d4a2d'/%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%23c9a84c' stroke-width='1'/%3E%3Cpath d='M9 21 L9 11 L13 17 L16 12 L19 17 L23 11 L23 21' stroke='%23c9a84c' stroke-width='1.8' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
 
   <script>
     tailwind.config = {
@@ -21,7 +26,7 @@
           },
           colors: {
             forest: {
-              50:  '#f2f7f2',
+              50: '#f2f7f2',
               100: '#e0ece0',
               200: '#c2d9c4',
               300: '#96bb99',
@@ -56,21 +61,38 @@
 
   <style>
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
     }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
-    .hero-video { object-fit: cover; width: 100%; height: 100%; }
+    .hero-video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
 
-    .text-shadow { text-shadow: 0 2px 20px rgba(0,0,0,0.4); }
-    .text-shadow-sm { text-shadow: 0 1px 8px rgba(0,0,0,0.3); }
+    .text-shadow {
+      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .text-shadow-sm {
+      text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    }
 
     .card-soft {
-      background: rgba(255,255,255,0.85);
+      background: rgba(255, 255, 255, 0.85);
       -webkit-backdrop-filter: blur(12px);
-      backdrop-filter: blur(12px);      
-      box-shadow: 0 4px 24px rgba(45,74,45,0.10), 0 1px 4px rgba(45,74,45,0.06);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 4px 24px rgba(45, 74, 45, 0.10), 0 1px 4px rgba(45, 74, 45, 0.06);
     }
 
     .reveal {
@@ -78,6 +100,7 @@
       transform: translateY(28px);
       transition: opacity 0.65s ease, transform 0.65s ease;
     }
+
     .reveal.visible {
       opacity: 1;
       transform: translateY(0);
@@ -85,18 +108,21 @@
 
     .nav-scrolled {
       background: rgba(26, 46, 26, 0.97) !important;
-      box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
     }
 
     .price-card {
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
+
     .price-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 12px 40px rgba(45,74,45,0.18);
+      box-shadow: 0 12px 40px rgba(45, 74, 45, 0.18);
     }
 
-    .block-tab { transition: all 0.2s ease; }
+    .block-tab {
+      transition: all 0.2s ease;
+    }
 
     .gold-line::after {
       content: '';
@@ -108,27 +134,57 @@
     }
 
     .countdown-box {
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
       -webkit-backdrop-filter: blur(8px);
       backdrop-filter: blur(8px);
     }
 
     @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-16px); }
-      to   { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(-16px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    .animate-fade-in-down { animation: fadeInDown 0.7s ease forwards; }
+
+    .animate-fade-in-down {
+      animation: fadeInDown 0.7s ease forwards;
+    }
 
     @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to   { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    .animate-fade-in-up { animation: fadeInUp 0.8s ease 0.2s forwards; opacity: 0; }
-    .animate-fade-in-up-2 { animation: fadeInUp 0.8s ease 0.45s forwards; opacity: 0; }
-    .animate-fade-in-up-3 { animation: fadeInUp 0.8s ease 0.65s forwards; opacity: 0; }
+
+    .animate-fade-in-up {
+      animation: fadeInUp 0.8s ease 0.2s forwards;
+      opacity: 0;
+    }
+
+    .animate-fade-in-up-2 {
+      animation: fadeInUp 0.8s ease 0.45s forwards;
+      opacity: 0;
+    }
+
+    .animate-fade-in-up-3 {
+      animation: fadeInUp 0.8s ease 0.65s forwards;
+      opacity: 0;
+    }
   </style>
 </head>
+
 <body class="font-sans text-forest-900 bg-cream antialiased">
 
   <!-- ===================== NAVBAR ===================== -->
@@ -137,15 +193,20 @@
       <!-- Logo -->
       <div class="flex items-center gap-3">
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-          <circle cx="16" cy="16" r="15" stroke="#c9a84c" stroke-width="1.5"/>
-          <path d="M16 6 C10 6 7 11 7 16 C7 21 10 26 16 26 C22 26 25 21 25 16" stroke="#c9a84c" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-          <path d="M16 10 C13 10 11 13 11 16 C11 19 13 22 16 22" stroke="rgba(201,168,76,0.5)" stroke-width="1" fill="none" stroke-linecap="round"/>
+          <circle cx="16" cy="16" r="15" stroke="#c9a84c" stroke-width="1.5" />
+          <path d="M16 6 C10 6 7 11 7 16 C7 21 10 26 16 26 C22 26 25 21 25 16" stroke="#c9a84c" stroke-width="1.5"
+            fill="none" stroke-linecap="round" />
+          <path d="M16 10 C13 10 11 13 11 16 C11 19 13 22 16 22" stroke="rgba(201,168,76,0.5)" stroke-width="1"
+            fill="none" stroke-linecap="round" />
         </svg>
         <span class="text-white font-serif font-medium tracking-wide text-sm">Wellness Mindbeauty & THE CLUB</span>
       </div>
       <!-- CTA nav -->
-      <a href="#reserva" class="hidden md:inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors duration-200 cursor-pointer">
-        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+      <a href="#reserva"
+        class="hidden md:inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors duration-200 cursor-pointer">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+        </svg>
         Reservar plaza
       </a>
     </div>
@@ -154,12 +215,8 @@
   <!-- ===================== HERO ===================== -->
   <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
     <!-- Video background -->
-    <video
-      class="hero-video absolute inset-0"
-      src="/4060979-uhd_3840_2160_30fps.mp4"
-      autoplay muted loop playsinline
-      aria-hidden="true"
-    ></video>
+    <video class="hero-video absolute inset-0" src="/4060979-uhd_3840_2160_30fps.mp4" autoplay muted loop playsinline
+      aria-hidden="true"></video>
     <!-- Overlay -->
     <div class="absolute inset-0 bg-gradient-to-b from-forest-900/80 via-forest-900/60 to-forest-900/85"></div>
 
@@ -168,22 +225,30 @@
       <p class="animate-fade-in-down text-gold-400 font-sans font-medium tracking-[0.25em] uppercase text-sm mb-6">
         Retiro Formativo II · 18–20 Mayo 2026
       </p>
-      <h1 class="animate-fade-in-up font-serif text-white text-shadow leading-tight mb-6" style="font-size: clamp(2.4rem, 6vw, 4.5rem);">
+      <h1 class="animate-fade-in-up font-serif text-white text-shadow leading-tight mb-6"
+        style="font-size: clamp(2.4rem, 6vw, 4.5rem);">
         Empresarias de la<br>
         <em class="text-gold-400 not-italic">Salud y el Bienestar</em>
       </h1>
-      <p class="animate-fade-in-up-2 text-white/85 font-sans text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-10 text-shadow-sm">
-        Un espacio para parar, ordenar y tomar decisiones reales.<br class="hidden md:block"/>
+      <p
+        class="animate-fade-in-up-2 text-white/85 font-sans text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-10 text-shadow-sm">
+        Un espacio para parar, ordenar y tomar decisiones reales.<br class="hidden md:block" />
         Menos ruido. Más claridad. Decisiones concretas.
       </p>
       <div class="animate-fade-in-up-3 flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="#reserva" class="inline-flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-600 text-white font-semibold px-8 py-4 rounded-full text-base transition-all duration-200 cursor-pointer shadow-lg">
-          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+        <a href="#reserva"
+          class="inline-flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-600 text-white font-semibold px-8 py-4 rounded-full text-base transition-all duration-200 cursor-pointer shadow-lg">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
           Reservar mi plaza
         </a>
-        <a href="#programa" class="inline-flex items-center justify-center gap-2 border border-white/40 hover:border-white/70 text-white font-medium px-8 py-4 rounded-full text-base transition-all duration-200 cursor-pointer">
+        <a href="#programa"
+          class="inline-flex items-center justify-center gap-2 border border-white/40 hover:border-white/70 text-white font-medium px-8 py-4 rounded-full text-base transition-all duration-200 cursor-pointer">
           Ver el programa
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
         </a>
       </div>
     </div>
@@ -211,7 +276,8 @@
     </div>
 
     <!-- Scroll hint -->
-    <div class="absolute bottom-36 md:bottom-32 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1 opacity-50">
+    <div
+      class="absolute bottom-36 md:bottom-32 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1 opacity-50">
       <div class="w-px h-8 bg-white/60 animate-pulse"></div>
     </div>
   </section>
@@ -219,7 +285,8 @@
   <!-- ===================== PROPÓSITO ===================== -->
   <section class="py-24 px-6 bg-cream">
     <div class="max-w-5xl mx-auto text-center">
-      <p class="reveal text-gold-600 font-sans font-medium tracking-[0.2em] uppercase text-sm mb-4">El objetivo del retiro</p>
+      <p class="reveal text-gold-600 font-sans font-medium tracking-[0.2em] uppercase text-sm mb-4">El objetivo del
+        retiro</p>
       <h2 class="reveal font-serif text-forest-800 text-4xl md:text-5xl mb-6 gold-line">"Parar."</h2>
       <p class="reveal text-forest-700 text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto mt-8 mb-16">
         Vamos a crear un espacio para parar, ordenar y tomar decisiones reales.
@@ -232,7 +299,7 @@
         <div class="card-soft rounded-2xl p-6 border border-sage-200 text-left">
           <div class="w-10 h-10 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
             <svg class="w-5 h-5 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              <path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
           <h3 class="font-serif text-forest-800 text-lg mb-2">Menos ruido mental</h3>
@@ -242,7 +309,9 @@
         <div class="card-soft rounded-2xl p-6 border border-sage-200 text-left">
           <div class="w-10 h-10 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
             <svg class="w-5 h-5 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="3"/><path d="M12 1v3m0 16v3M4.22 4.22l2.12 2.12m11.32 11.32l2.12 2.12M1 12h3m16 0h3M4.22 19.78l2.12-2.12M18.66 5.34l2.12-2.12"/>
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M12 1v3m0 16v3M4.22 4.22l2.12 2.12m11.32 11.32l2.12 2.12M1 12h3m16 0h3M4.22 19.78l2.12-2.12M18.66 5.34l2.12-2.12" />
             </svg>
           </div>
           <h3 class="font-serif text-forest-800 text-lg mb-2">Claridad estratégica</h3>
@@ -252,17 +321,19 @@
         <div class="card-soft rounded-2xl p-6 border border-sage-200 text-left">
           <div class="w-10 h-10 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
             <svg class="w-5 h-5 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              <path d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
           </div>
           <h3 class="font-serif text-forest-800 text-lg mb-2">Decisiones concretas</h3>
-          <p class="text-forest-600 text-sm leading-relaxed">No intenciones. Tres decisiones reales con las que actuar.</p>
+          <p class="text-forest-600 text-sm leading-relaxed">No intenciones. Tres decisiones reales con las que actuar.
+          </p>
         </div>
 
         <div class="card-soft rounded-2xl p-6 border border-sage-200 text-left">
           <div class="w-10 h-10 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
             <svg class="w-5 h-5 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+              <path
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
           </div>
           <h3 class="font-serif text-forest-800 text-lg mb-2">Mujeres que inspiran</h3>
@@ -285,22 +356,29 @@
 
         <div class="reveal card-soft rounded-2xl p-8 border-l-4 border-forest-600">
           <p class="font-serif text-forest-800 text-xl mb-3 italic">"Todo funciona… pero yo no estoy tranquila."</p>
-          <p class="text-forest-600 text-base leading-relaxed">Tu negocio avanza, tu equipo responde, todo "va bien"… pero tu cabeza no para. <strong class="text-forest-700">Este retiro es para ti si necesitas bajar el ruido y volver a sentir claridad.</strong></p>
+          <p class="text-forest-600 text-base leading-relaxed">Tu negocio avanza, tu equipo responde, todo "va bien"…
+            pero tu cabeza no para. <strong class="text-forest-700">Este retiro es para ti si necesitas bajar el ruido y
+              volver a sentir claridad.</strong></p>
         </div>
 
         <div class="reveal card-soft rounded-2xl p-8 border-l-4 border-forest-600">
           <p class="font-serif text-forest-800 text-xl mb-3 italic">"Estoy sosteniendo demasiado."</p>
-          <p class="text-forest-600 text-base leading-relaxed">Decides, supervisas, empujas… aunque podrías delegar más, no terminas de hacerlo. <strong class="text-forest-700">Aquí vas a entender qué debes dejar de hacer y cómo hacerlo sin perder control.</strong></p>
+          <p class="text-forest-600 text-base leading-relaxed">Decides, supervisas, empujas… aunque podrías delegar más,
+            no terminas de hacerlo. <strong class="text-forest-700">Aquí vas a entender qué debes dejar de hacer y cómo
+              hacerlo sin perder control.</strong></p>
         </div>
 
         <div class="reveal card-soft rounded-2xl p-8 border-l-4 border-gold-500">
           <p class="font-serif text-forest-800 text-xl mb-3 italic">"Tengo ambición de crecer pero no sé por dónde."</p>
-          <p class="text-forest-600 text-base leading-relaxed">Sabes que quieres más, pero no tienes definido el camino. <strong class="text-forest-700">Este espacio es para ordenar, enfocar y decidir con criterio.</strong></p>
+          <p class="text-forest-600 text-base leading-relaxed">Sabes que quieres más, pero no tienes definido el camino.
+            <strong class="text-forest-700">Este espacio es para ordenar, enfocar y decidir con criterio.</strong>
+          </p>
         </div>
 
         <div class="reveal card-soft rounded-2xl p-8 border-l-4 border-gold-500">
           <p class="font-serif text-forest-800 text-xl mb-3 italic">"Necesito parar… pero no encuentro el momento."</p>
-          <p class="text-forest-600 text-base leading-relaxed">Siempre hay algo urgente, alguien que depende de ti, una decisión pendiente. <strong class="text-forest-700">Este retiro es ese momento.</strong></p>
+          <p class="text-forest-600 text-base leading-relaxed">Siempre hay algo urgente, alguien que depende de ti, una
+            decisión pendiente. <strong class="text-forest-700">Este retiro es ese momento.</strong></p>
         </div>
 
       </div>
@@ -311,23 +389,32 @@
   <section id="programa" class="py-24 px-6 bg-cream">
     <div class="max-w-5xl mx-auto">
       <div class="text-center mb-16">
-        <p class="reveal text-gold-600 font-sans font-medium tracking-[0.2em] uppercase text-sm mb-4">18, 19 y 20 de Mayo 2026</p>
+        <p class="reveal text-gold-600 font-sans font-medium tracking-[0.2em] uppercase text-sm mb-4">18, 19 y 20 de
+          Mayo 2026</p>
         <h2 class="reveal font-serif text-forest-800 text-4xl md:text-5xl gold-line">El programa</h2>
       </div>
 
       <!-- Tabs días -->
       <div class="reveal flex justify-center mb-10" role="tablist" aria-label="Días del retiro">
         <div class="inline-flex bg-sage-100 rounded-full p-1.5 gap-1">
-          <button onclick="showDay('lunes')" id="tab-lunes" role="tab" aria-selected="true" class="block-tab px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-forest-700 cursor-pointer">Lunes 18</button>
-          <button onclick="showDay('martes')" id="tab-martes" role="tab" aria-selected="false" class="block-tab px-5 py-2.5 rounded-full text-sm font-semibold text-forest-700 hover:bg-sage-200 cursor-pointer">Martes 19</button>
-          <button onclick="showDay('miercoles')" id="tab-miercoles" role="tab" aria-selected="false" class="block-tab px-5 py-2.5 rounded-full text-sm font-semibold text-forest-700 hover:bg-sage-200 cursor-pointer">Miércoles 20</button>
+          <button onclick="showDay('lunes')" id="tab-lunes" role="tab" aria-selected="true"
+            class="block-tab px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-forest-700 cursor-pointer">Lunes
+            18</button>
+          <button onclick="showDay('martes')" id="tab-martes" role="tab" aria-selected="false"
+            class="block-tab px-5 py-2.5 rounded-full text-sm font-semibold text-forest-700 hover:bg-sage-200 cursor-pointer">Martes
+            19</button>
+          <button onclick="showDay('miercoles')" id="tab-miercoles" role="tab" aria-selected="false"
+            class="block-tab px-5 py-2.5 rounded-full text-sm font-semibold text-forest-700 hover:bg-sage-200 cursor-pointer">Miércoles
+            20</button>
         </div>
       </div>
 
       <!-- Día Lunes -->
       <div id="day-lunes" role="tabpanel">
         <div class="text-center mb-8">
-          <span class="inline-block bg-forest-100 text-forest-700 font-semibold px-4 py-1.5 rounded-full text-sm tracking-wide">LLEGADA &amp; APERTURA</span>
+          <span
+            class="inline-block bg-forest-100 text-forest-700 font-semibold px-4 py-1.5 rounded-full text-sm tracking-wide">LLEGADA
+            &amp; APERTURA</span>
         </div>
         <div class="space-y-4 max-w-2xl mx-auto">
           <div class="card-soft rounded-2xl p-6 flex gap-5 border border-sage-200">
@@ -364,7 +451,9 @@
       <!-- Día Martes -->
       <div id="day-martes" role="tabpanel" class="hidden">
         <div class="text-center mb-8">
-          <span class="inline-block bg-forest-100 text-forest-700 font-semibold px-4 py-1.5 rounded-full text-sm tracking-wide">PENSAR · ORDENAR Y VER CON CLARIDAD</span>
+          <span
+            class="inline-block bg-forest-100 text-forest-700 font-semibold px-4 py-1.5 rounded-full text-sm tracking-wide">PENSAR
+            · ORDENAR Y VER CON CLARIDAD</span>
         </div>
         <div class="space-y-4 max-w-2xl mx-auto">
           <div class="card-soft rounded-2xl p-6 flex gap-5 border border-sage-200">
@@ -377,7 +466,8 @@
           <div class="card-soft rounded-2xl p-6 flex gap-5 border border-sage-200">
             <div class="text-gold-500 font-serif font-semibold text-sm w-16 shrink-0 pt-0.5">09:30</div>
             <div>
-              <div class="inline-block bg-forest-700 text-white text-xs font-semibold px-3 py-0.5 rounded-full mb-2">BLOQUE 1 — VER LA REALIDAD</div>
+              <div class="inline-block bg-forest-700 text-white text-xs font-semibold px-3 py-0.5 rounded-full mb-2">
+                BLOQUE 1 — VER LA REALIDAD</div>
               <h4 class="font-serif text-forest-800 text-lg mb-1">¿Dónde estoy empresarialmente?</h4>
               <p class="text-forest-600 text-sm italic">"Mi empresa hoy" — diagnóstico individual y puesta en común.</p>
             </div>
@@ -385,16 +475,19 @@
           <div class="card-soft rounded-2xl p-6 flex gap-5 border border-sage-200">
             <div class="text-gold-500 font-serif font-semibold text-sm w-16 shrink-0 pt-0.5">12:00</div>
             <div>
-              <div class="inline-block bg-forest-700 text-white text-xs font-semibold px-3 py-0.5 rounded-full mb-2">BLOQUE 2 — SIMPLIFICAR Y LIBERAR</div>
+              <div class="inline-block bg-forest-700 text-white text-xs font-semibold px-3 py-0.5 rounded-full mb-2">
+                BLOQUE 2 — SIMPLIFICAR Y LIBERAR</div>
               <h4 class="font-serif text-forest-800 text-lg mb-1">IA, Escala y Errores</h4>
-              <p class="text-forest-600 text-sm">Con Alejandro Martínez, experto invitado. Qué automatizar, cómo escalar sin complejizar.</p>
+              <p class="text-forest-600 text-sm">Con Alejandro Martínez, experto invitado. Qué automatizar, cómo escalar
+                sin complejizar.</p>
               <p class="text-forest-600 text-sm mt-1 italic">13:30 — Caso real: Capa digital aplicada (Sorpresa)</p>
             </div>
           </div>
           <div class="card-soft rounded-2xl p-6 flex gap-5 border border-sage-200">
             <div class="text-gold-500 font-serif font-semibold text-sm w-16 shrink-0 pt-0.5">16:00</div>
             <div>
-              <div class="inline-block bg-forest-700 text-white text-xs font-semibold px-3 py-0.5 rounded-full mb-2">BLOQUE 3 — LIDERAZGO Y EQUIPO</div>
+              <div class="inline-block bg-forest-700 text-white text-xs font-semibold px-3 py-0.5 rounded-full mb-2">
+                BLOQUE 3 — LIDERAZGO Y EQUIPO</div>
               <h4 class="font-serif text-forest-800 text-lg mb-1">Liderazgo y equipos</h4>
               <p class="text-forest-600 text-sm">Con María Luján. Cómo soltar sin perder dirección.</p>
             </div>
@@ -402,10 +495,13 @@
           <div class="card-soft rounded-2xl p-6 flex gap-5 border-l-4 border-gold-500">
             <div class="text-gold-500 font-serif font-semibold text-sm w-16 shrink-0 pt-0.5">18:30</div>
             <div>
-              <div class="inline-block bg-gold-500 text-white text-xs font-semibold px-3 py-0.5 rounded-full mb-2">BLOQUE 4 — CRECER SIN COLAPSAR</div>
+              <div class="inline-block bg-gold-500 text-white text-xs font-semibold px-3 py-0.5 rounded-full mb-2">
+                BLOQUE 4 — CRECER SIN COLAPSAR</div>
               <h4 class="font-serif text-forest-800 text-lg mb-1">Nuevas capas de rentabilidad</h4>
-              <p class="text-forest-600 text-sm">María Luján con la participación de Alejandro Martínez como experto invitado. Nuevas líneas, nuevos formatos.</p>
-              <p class="text-forest-600 text-sm mt-1 italic">19:30 — Puerta a la inversión · Intervención de experto invitado: Alejandro Martínez</p>
+              <p class="text-forest-600 text-sm">María Luján con la participación de Alejandro Martínez como experto
+                invitado. Nuevas líneas, nuevos formatos.</p>
+              <p class="text-forest-600 text-sm mt-1 italic">19:30 — Puerta a la inversión · Intervención de experto
+                invitado: Alejandro Martínez</p>
             </div>
           </div>
         </div>
@@ -414,13 +510,16 @@
       <!-- Día Miércoles -->
       <div id="day-miercoles" role="tabpanel" class="hidden">
         <div class="text-center mb-8">
-          <span class="inline-block bg-gold-400/20 text-gold-600 font-semibold px-4 py-1.5 rounded-full text-sm tracking-wide">CLARIDAD Y DECISIÓN</span>
+          <span
+            class="inline-block bg-gold-400/20 text-gold-600 font-semibold px-4 py-1.5 rounded-full text-sm tracking-wide">CLARIDAD
+            Y DECISIÓN</span>
         </div>
         <div class="space-y-4 max-w-2xl mx-auto">
           <div class="card-soft rounded-2xl p-6 flex gap-5 border-l-4 border-gold-500">
             <div class="text-gold-500 font-serif font-semibold text-sm w-16 shrink-0 pt-0.5">09:30</div>
             <div>
-              <div class="inline-block bg-gold-500 text-white text-xs font-semibold px-3 py-0.5 rounded-full mb-2">BLOQUE FINAL</div>
+              <div class="inline-block bg-gold-500 text-white text-xs font-semibold px-3 py-0.5 rounded-full mb-2">
+                BLOQUE FINAL</div>
               <h4 class="font-serif text-forest-800 text-lg mb-1">Análisis de lo construido</h4>
               <p class="text-forest-600 text-sm">Revisión colectiva. ¿Qué cambió en mi mirada?</p>
             </div>
@@ -429,7 +528,8 @@
             <div class="text-gold-500 font-serif font-semibold text-sm w-16 shrink-0 pt-0.5">10:30</div>
             <div>
               <h4 class="font-serif text-forest-800 text-lg mb-1">"Mis 3 decisiones"</h4>
-              <p class="text-forest-600 text-sm">Cada participante define tres decisiones concretas con las que sale del retiro.</p>
+              <p class="text-forest-600 text-sm">Cada participante define tres decisiones concretas con las que sale del
+                retiro.</p>
             </div>
           </div>
           <div class="card-soft rounded-2xl p-6 flex gap-5 border border-sage-200">
@@ -457,48 +557,48 @@
     <div class="max-w-5xl mx-auto text-center">
       <p class="reveal text-gold-400 font-sans font-medium tracking-[0.2em] uppercase text-sm mb-4">El Retiro</p>
       <h2 class="reveal font-serif text-white text-4xl md:text-5xl mb-6 gold-line">La voz de María Luján</h2>
-      <p class="reveal max-w-3xl mx-auto text-white/65 text-base md:text-lg leading-relaxed mb-14">Este retiro nace de la visión de María Luján de crear el espacio que muchas necesitan: parar, soltar el ruido y volver a la claridad.</p>
+      <p class="reveal max-w-3xl mx-auto text-white/65 text-base md:text-lg leading-relaxed mb-14">Este retiro nace de
+        la visión de María Luján de crear el espacio que muchas necesitan: parar, soltar el ruido y volver a la
+        claridad.</p>
 
       <div class="reveal space-y-8 max-w-4xl mx-auto">
         <div class="card-soft rounded-[2rem] border border-white/10 bg-white/8 p-8 md:p-10 text-left">
           <div class="flex flex-col md:flex-row md:items-center gap-8">
-            <div class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-lg ring-2 ring-white/20 shrink-0 mx-auto md:mx-0">
-              <img
-                src="/clickandbuilds/mlretiro.webp"
-                alt="María Luján"
-                class="w-full h-full object-cover"
-                style="object-position: center 18%;"
-              />
+            <div
+              class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-lg ring-2 ring-white/20 shrink-0 mx-auto md:mx-0">
+              <img src="./mlretiro.webp" alt="María Luján" class="w-full h-full object-cover"
+                style="object-position: 68% 18%;" />
             </div>
             <div class="flex-1 text-center md:text-left">
-              <span class="inline-flex items-center rounded-full bg-gold-500/15 border border-gold-400/30 px-4 py-1.5 text-xs font-semibold tracking-[0.22em] uppercase text-gold-400 mb-4">Creadora del retiro</span>
+              <span
+                class="inline-flex items-center rounded-full bg-gold-500/15 border border-gold-400/30 px-4 py-1.5 text-xs font-semibold tracking-[0.22em] uppercase text-gold-400 mb-4">Creadora
+                del retiro</span>
               <h3 class="font-serif text-[#7C897C] text-3xl md:text-4xl mb-2">María Luján</h3>
-              <p class="text-gold-400 text-sm font-medium tracking-wider uppercase mb-4">Dirección · Liderazgo · Visión</p>
-              <p class="text-[#7C897C] text-base leading-relaxed max-w-2xl">Fundadora de Wellness Mindbeauty & THE CLUB y creadora de esta experiencia. Guía el retiro de principio a fin, sosteniendo la visión, el contenido y las decisiones clave que se trabajan durante esos días.</p>
+              <p class="text-gold-400 text-sm font-medium tracking-wider uppercase mb-4">Dirección · Liderazgo · Visión
+              </p>
+              <p class="text-[#7C897C] text-base leading-relaxed max-w-2xl">Fundadora de Wellness Mindbeauty & THE CLUB
+                y creadora de esta experiencia. Guía el retiro de principio a fin, sosteniendo la visión, el contenido y
+                las decisiones clave que se trabajan durante esos días.</p>
               <div class="mt-6 flex flex-wrap items-center justify-center md:justify-start gap-3">
-                <a
-                  href="https://www.instagram.com/marialujanvlc/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <a href="https://www.instagram.com/marialujanvlc/" target="_blank" rel="noopener noreferrer"
                   class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/8 px-4 py-2 text-sm font-medium text-[#7C897C] transition-colors duration-200 hover:border-gold-400/50 hover:bg-white/12 hover:text-[#7C897C]"
-                  aria-label="Instagram de María Luján"
-                >
-                  <svg class="h-4 w-4 text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  aria-label="Instagram de María Luján">
+                  <svg class="h-4 w-4 text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.8" aria-hidden="true">
                     <rect x="3.5" y="3.5" width="17" height="17" rx="4"></rect>
                     <circle cx="12" cy="12" r="4"></circle>
                     <circle cx="17.5" cy="6.5" r="1"></circle>
                   </svg>
                   Instagram
                 </a>
-                <a
-                  href="https://www.linkedin.com/in/maria-luj%C3%A1n-6836955a/"
-                  target="_blank"
+                <a href="https://www.linkedin.com/in/maria-luj%C3%A1n-6836955a/" target="_blank"
                   rel="noopener noreferrer"
                   class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/8 px-4 py-2 text-sm font-medium text-[#7C897C] transition-colors duration-200 hover:border-gold-400/50 hover:bg-white/12 hover:text-[#7C897C]"
-                  aria-label="LinkedIn de María Luján"
-                >
+                  aria-label="LinkedIn de María Luján">
                   <svg class="h-4 w-4 text-gold-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.38a1.56 1.56 0 0 1 0 3.12zM5.5 10h2.9v8.5H5.5zM10.2 10h2.78v1.16h.04c.39-.73 1.34-1.5 2.76-1.5 2.95 0 3.5 1.94 3.5 4.47v4.37h-2.9v-3.88c0-.93-.02-2.12-1.29-2.12-1.29 0-1.49 1.01-1.49 2.05v3.95h-2.9z"></path>
+                    <path
+                      d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.38a1.56 1.56 0 0 1 0 3.12zM5.5 10h2.9v8.5H5.5zM10.2 10h2.78v1.16h.04c.39-.73 1.34-1.5 2.76-1.5 2.95 0 3.5 1.94 3.5 4.47v4.37h-2.9v-3.88c0-.93-.02-2.12-1.29-2.12-1.29 0-1.49 1.01-1.49 2.05v3.95h-2.9z">
+                    </path>
                   </svg>
                   LinkedIn
                 </a>
@@ -510,25 +610,20 @@
         <div class="max-w-2xl mx-auto rounded-2xl border border-white/10 bg-white/6 px-6 py-7 text-center">
           <p class="text-white/45 text-xs font-semibold tracking-[0.24em] uppercase mb-3">Experto invitado</p>
           <div class="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4 shadow-lg ring-2 ring-white/10">
-            <img
-              src="/clickandbuilds/alejandroretiro.webp"
-              alt="Alejandro Martínez"
-              class="w-full h-full object-cover"
-            />
+            <img src="./alejandroretiro.webp" alt="Alejandro Martínez" class="w-full h-full object-cover" />
           </div>
           <h3 class="font-serif text-white text-2xl mb-2">Alejandro Martínez</h3>
           <p class="text-gold-400 text-sm font-medium tracking-wider uppercase mb-3">IA y Estrategia</p>
-          <p class="text-white/65 text-sm leading-relaxed max-w-xl mx-auto">Aporta una perspectiva técnica y estratégica en bloques clave del retiro, en plena sintonía con la dirección y enfoque de María Luján.</p>
+          <p class="text-white/65 text-sm leading-relaxed max-w-xl mx-auto">Aporta una perspectiva técnica y estratégica
+            en bloques clave del retiro, en plena sintonía con la dirección y enfoque de María Luján.</p>
           <div class="mt-5 flex items-center justify-center">
-            <a
-              href="https://www.linkedin.com/in/alejandromartinezfuster/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/in/alejandromartinezfuster/" target="_blank" rel="noopener noreferrer"
               class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/8 px-4 py-2 text-sm font-medium text-white/90 transition-colors duration-200 hover:border-gold-400/50 hover:bg-white/12 hover:text-white"
-              aria-label="LinkedIn de Alejandro Martínez"
-            >
+              aria-label="LinkedIn de Alejandro Martínez">
               <svg class="h-4 w-4 text-gold-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M6.94 8.5H3.56V20h3.38V8.5zM5.25 3A1.96 1.96 0 103 4.96 1.98 1.98 0 005.25 3zM20.44 20h-3.37v-5.59c0-1.33 0-3.05-1.86-3.05s-2.15 1.45-2.15 2.95V20H9.69V8.5h3.24v1.57h.05a3.56 3.56 0 013.2-1.76c3.42 0 4.05 2.25 4.05 5.18V20z"></path>
+                <path
+                  d="M6.94 8.5H3.56V20h3.38V8.5zM5.25 3A1.96 1.96 0 103 4.96 1.98 1.98 0 005.25 3zM20.44 20h-3.37v-5.59c0-1.33 0-3.05-1.86-3.05s-2.15 1.45-2.15 2.95V20H9.69V8.5h3.24v1.57h.05a3.56 3.56 0 013.2-1.76c3.42 0 4.05 2.25 4.05 5.18V20z">
+                </path>
               </svg>
               LinkedIn
             </a>
@@ -542,9 +637,11 @@
   <section id="reserva" class="py-24 px-6 bg-cream">
     <div class="max-w-5xl mx-auto">
       <div class="text-center mb-16">
-        <p class="reveal text-gold-600 font-sans font-medium tracking-[0.2em] uppercase text-sm mb-4">2 noches todo incluido · Excepto traslados</p>
+        <p class="reveal text-gold-600 font-sans font-medium tracking-[0.2em] uppercase text-sm mb-4">2 noches todo
+          incluido · Excepto traslados</p>
         <h2 class="reveal font-serif text-forest-800 text-4xl md:text-5xl gold-line">Tarifas por persona</h2>
-        <p class="reveal text-forest-600 mt-8 text-base">Pre-reserva del 50% antes del <strong>23 de Abril</strong>. Plazas limitadas.</p>
+        <p class="reveal text-forest-600 mt-8 text-base">Pre-reserva del 50% antes del <strong>23 de Abril</strong>.
+          Plazas limitadas.</p>
       </div>
 
       <div class="reveal grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -553,7 +650,11 @@
         <div class="price-card card-soft rounded-2xl border border-sage-200 overflow-hidden cursor-pointer">
           <div class="bg-sage-100 px-6 py-5 border-b border-sage-200">
             <div class="flex items-center gap-3 mb-1">
-              <svg class="w-5 h-5 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <svg class="w-5 h-5 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
               <h3 class="font-serif text-forest-800 text-xl">Individual</h3>
             </div>
             <p class="text-forest-600 text-sm">Habitación propia</p>
@@ -571,13 +672,19 @@
         </div>
 
         <!-- Doble compartida — destacada -->
-        <div class="price-card rounded-2xl overflow-hidden border-2 border-forest-600 shadow-xl cursor-pointer relative">
+        <div
+          class="price-card rounded-2xl overflow-hidden border-2 border-forest-600 shadow-xl cursor-pointer relative">
           <div class="absolute top-0 left-0 right-0 text-center">
-            <span class="inline-block bg-gold-500 text-white text-xs font-bold px-4 py-1 tracking-wider uppercase">Más elegida</span>
+            <span class="inline-block bg-gold-500 text-white text-xs font-bold px-4 py-1 tracking-wider uppercase">Más
+              elegida</span>
           </div>
           <div class="bg-forest-700 px-6 pt-9 pb-5 border-b border-forest-600">
             <div class="flex items-center gap-3 mb-1">
-              <svg class="w-5 h-5 text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+              <svg class="w-5 h-5 text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+              </svg>
               <h3 class="font-serif text-white text-xl">Doble compartida</h3>
             </div>
             <p class="text-white/60 text-sm">Habitación para dos</p>
@@ -598,7 +705,11 @@
         <div class="price-card card-soft rounded-2xl border border-sage-200 overflow-hidden cursor-pointer">
           <div class="bg-sage-100 px-6 py-5 border-b border-sage-200">
             <div class="flex items-center gap-3 mb-1">
-              <svg class="w-5 h-5 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <svg class="w-5 h-5 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
               <h3 class="font-serif text-forest-800 text-xl">Albergue</h3>
             </div>
             <p class="text-forest-600 text-sm">Habitación de 3/4 personas</p>
@@ -618,7 +729,9 @@
       </div>
 
       <p class="reveal text-center text-forest-600 text-sm mt-6 flex items-center justify-center gap-2">
-        <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        </svg>
         10% de descuento por asistente referida
       </p>
 
@@ -626,9 +739,15 @@
       <div class="reveal mt-12 text-center">
         <div class="card-soft rounded-2xl border border-sage-200 p-8 md:p-10 max-w-lg mx-auto">
           <h3 class="font-serif text-forest-800 text-2xl mb-2">¿Lista para reservar?</h3>
-          <p class="text-forest-600 text-sm mb-6 leading-relaxed">Plazas limitadas. Pre-reserva del 50% antes del <strong>23 de abril</strong>. Contacta con María Luján para confirmar disponibilidad.</p>
-          <a href="tel:+34664275129" class="inline-flex items-center justify-center gap-2 bg-forest-700 hover:bg-forest-800 text-white font-semibold px-8 py-4 rounded-full text-base transition-colors duration-200 cursor-pointer w-full mb-3">
-            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.9 9.7 19.79 19.79 0 01.87 1.07 2 2 0 012.87 0h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0121.9 14l.02 2.92z"/></svg>
+          <p class="text-forest-600 text-sm mb-6 leading-relaxed">Plazas limitadas. Pre-reserva del 50% antes del
+            <strong>23 de abril</strong>. Contacta con María Luján para confirmar disponibilidad.
+          </p>
+          <a href="tel:+34664275129"
+            class="inline-flex items-center justify-center gap-2 bg-forest-700 hover:bg-forest-800 text-white font-semibold px-8 py-4 rounded-full text-base transition-colors duration-200 cursor-pointer w-full mb-3">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.9 9.7 19.79 19.79 0 01.87 1.07 2 2 0 012.87 0h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0121.9 14l.02 2.92z" />
+            </svg>
             664 275 129
           </a>
           <div class="text-forest-500 text-xs mt-2">
@@ -643,8 +762,12 @@
   <!-- ===================== LUGAR ===================== -->
   <section class="py-24 px-6 bg-forest-900 relative overflow-hidden">
     <div class="absolute inset-0 opacity-10">
-      <div class="absolute top-0 right-0 w-96 h-96 bg-gold-400 rounded-full filter blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
-      <div class="absolute bottom-0 left-0 w-80 h-80 bg-sage-300 rounded-full filter blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
+      <div
+        class="absolute top-0 right-0 w-96 h-96 bg-gold-400 rounded-full filter blur-3xl transform translate-x-1/2 -translate-y-1/2">
+      </div>
+      <div
+        class="absolute bottom-0 left-0 w-80 h-80 bg-sage-300 rounded-full filter blur-3xl transform -translate-x-1/2 translate-y-1/2">
+      </div>
     </div>
     <div class="relative max-w-5xl mx-auto">
       <div class="text-center mb-16">
@@ -654,21 +777,38 @@
 
       <div class="reveal grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
 
-        <a href="https://www.google.com/maps/search/?api=1&query=Hotel+Mar+de+Fulles+Alfondeguilla+Castell%C3%B3n+Espa%C3%B1a" target="_blank" rel="noopener noreferrer" class="text-center group cursor-pointer block" aria-label="Abrir Hotel Mar de Fulles en Google Maps">
-          <div class="w-12 h-12 bg-gold-500/20 group-hover:bg-gold-500/40 rounded-xl flex items-center justify-center mx-auto mb-4 transition-colors duration-200">
-            <svg class="w-6 h-6 text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <a href="https://www.google.com/maps/search/?api=1&query=Hotel+Mar+de+Fulles+Alfondeguilla+Castell%C3%B3n+Espa%C3%B1a"
+          target="_blank" rel="noopener noreferrer" class="text-center group cursor-pointer block"
+          aria-label="Abrir Hotel Mar de Fulles en Google Maps">
+          <div
+            class="w-12 h-12 bg-gold-500/20 group-hover:bg-gold-500/40 rounded-xl flex items-center justify-center mx-auto mb-4 transition-colors duration-200">
+            <svg class="w-6 h-6 text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
           </div>
-          <h4 class="font-serif text-white text-lg mb-1 group-hover:text-gold-400 transition-colors duration-200">Ubicación</h4>
+          <h4 class="font-serif text-white text-lg mb-1 group-hover:text-gold-400 transition-colors duration-200">
+            Ubicación</h4>
           <p class="text-white/60 text-sm">Polígono 5, Parcela 69<br>Alfondeguilla, Castellón<br>12609, España</p>
-          <span class="inline-flex items-center gap-1 text-gold-400/70 group-hover:text-gold-400 text-xs mt-2 transition-colors duration-200">
-            <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          <span
+            class="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-gold-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg transition-colors duration-200 group-hover:bg-gold-600">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+              <polyline points="15 3 21 3 21 9" />
+              <line x1="10" y1="14" x2="21" y2="3" />
+            </svg>
             Ver en Google Maps
           </span>
         </a>
 
         <div class="text-center">
           <div class="w-12 h-12 bg-gold-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-            <svg class="w-6 h-6 text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <svg class="w-6 h-6 text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+              <line x1="16" y1="2" x2="16" y2="6" />
+              <line x1="8" y1="2" x2="8" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+            </svg>
           </div>
           <h4 class="font-serif text-white text-lg mb-1">Fechas</h4>
           <p class="text-white/60 text-sm">Llegada: Lunes 18 Mayo · 17h<br>Salida: Miércoles 20 Mayo · 13h</p>
@@ -676,7 +816,10 @@
 
         <div class="text-center">
           <div class="w-12 h-12 bg-gold-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-            <svg class="w-6 h-6 text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <svg class="w-6 h-6 text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
           </div>
           <h4 class="font-serif text-white text-lg mb-1">Alojamiento</h4>
           <p class="text-white/60 text-sm">Todo incluido<br>(excepto traslados)<br>info@mardefulles.es</p>
@@ -689,7 +832,8 @@
   <!-- ===================== CTA FINAL ===================== -->
   <section class="py-24 px-6 bg-parchment text-center">
     <div class="max-w-2xl mx-auto">
-      <p class="reveal text-gold-600 font-sans font-medium tracking-[0.2em] uppercase text-sm mb-4">El momento es ahora</p>
+      <p class="reveal text-gold-600 font-sans font-medium tracking-[0.2em] uppercase text-sm mb-4">El momento es ahora
+      </p>
       <h2 class="reveal font-serif text-forest-800 text-4xl md:text-5xl mb-6">
         Este retiro<br><em>es ese momento.</em>
       </h2>
@@ -697,11 +841,16 @@
         Si todavía no nos conocemos, agendaremos una llamada para saber si es lo que estás buscando y si ajusta a ti.
       </p>
       <div class="reveal flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="tel:+34664275129" class="inline-flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-600 text-white font-semibold px-8 py-4 rounded-full text-base transition-colors duration-200 cursor-pointer shadow-lg">
-          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.9 9.7 19.79 19.79 0 01.87 1.07 2 2 0 012.87 0h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0121.9 14l.02 2.92z"/></svg>
+        <a href="tel:+34664275129"
+          class="inline-flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-600 text-white font-semibold px-8 py-4 rounded-full text-base transition-colors duration-200 cursor-pointer shadow-lg">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.9 9.7 19.79 19.79 0 01.87 1.07 2 2 0 012.87 0h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0121.9 14l.02 2.92z" />
+          </svg>
           Llamar: 664 275 129
         </a>
-        <a href="#programa" class="inline-flex items-center justify-center gap-2 border-2 border-forest-600 text-forest-700 hover:bg-forest-700 hover:text-white font-semibold px-8 py-4 rounded-full text-base transition-all duration-200 cursor-pointer">
+        <a href="#programa"
+          class="inline-flex items-center justify-center gap-2 border-2 border-forest-600 text-forest-700 hover:bg-forest-700 hover:text-white font-semibold px-8 py-4 rounded-full text-base transition-all duration-200 cursor-pointer">
           Revisar el programa
         </a>
       </div>
@@ -714,10 +863,12 @@
 
       <!-- Cabecera -->
       <div class="text-center mb-14">
-        <p class="reveal text-gold-600 font-sans font-medium tracking-[0.2em] uppercase text-sm mb-4">Acompañamiento personalizado</p>
+        <p class="reveal text-gold-600 font-sans font-medium tracking-[0.2em] uppercase text-sm mb-4">Acompañamiento
+          personalizado</p>
         <h2 class="reveal font-serif text-forest-800 text-4xl md:text-5xl gold-line">Consulta privada individual</h2>
         <p class="reveal text-forest-600 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mt-8">
-          Un espacio de 2 horas para trabajar tu caso de forma personalizada, con acompañamiento cercano y un reporte posterior incluido.
+          Un espacio de 2 horas para trabajar tu caso de forma personalizada, con acompañamiento cercano y un reporte
+          posterior incluido.
         </p>
       </div>
 
@@ -726,7 +877,8 @@
         <div class="card-soft rounded-2xl p-5 border border-sage-200 text-center">
           <div class="w-10 h-10 bg-sage-100 rounded-xl flex items-center justify-center mx-auto mb-3">
             <svg class="w-5 h-5 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
             </svg>
           </div>
           <p class="text-forest-500 text-xs uppercase tracking-wider mb-1">Duración</p>
@@ -735,7 +887,8 @@
         <div class="card-soft rounded-2xl p-5 border border-sage-200 text-center">
           <div class="w-10 h-10 bg-sage-100 rounded-xl flex items-center justify-center mx-auto mb-3">
             <svg class="w-5 h-5 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+              <line x1="12" y1="1" x2="12" y2="23" />
+              <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
             </svg>
           </div>
           <p class="text-forest-500 text-xs uppercase tracking-wider mb-1">Precio</p>
@@ -744,7 +897,10 @@
         <div class="card-soft rounded-2xl p-5 border border-sage-200 text-center">
           <div class="w-10 h-10 bg-sage-100 rounded-xl flex items-center justify-center mx-auto mb-3">
             <svg class="w-5 h-5 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" y1="13" x2="8" y2="13" />
+              <line x1="16" y1="17" x2="8" y2="17" />
             </svg>
           </div>
           <p class="text-forest-500 text-xs uppercase tracking-wider mb-1">Incluye</p>
@@ -753,7 +909,7 @@
         <div class="card-soft rounded-2xl p-5 border border-sage-200 text-center">
           <div class="w-10 h-10 bg-sage-100 rounded-xl flex items-center justify-center mx-auto mb-3">
             <svg class="w-5 h-5 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
             </svg>
           </div>
           <p class="text-forest-500 text-xs uppercase tracking-wider mb-1">Reserva</p>
@@ -762,10 +918,10 @@
       </div>
 
       <!-- Layout: disponibilidad + formulario -->
-      <div class="reveal grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-start">
+      <div class="reveal flex flex-col gap-8 items-center">
 
         <!-- Disponibilidad -->
-        <aside class="lg:col-span-2 space-y-5">
+        <aside class="w-full max-w-3xl space-y-5">
           <div class="card-soft rounded-2xl border border-sage-200 overflow-hidden">
             <div class="bg-forest-700 px-6 py-4">
               <h3 class="font-serif text-white text-lg">Disponibilidad</h3>
@@ -775,171 +931,80 @@
               <div>
                 <p class="text-gold-600 text-xs font-semibold uppercase tracking-widest mb-3">Martes · 13:00–15:00</p>
                 <ul class="space-y-2">
-                  <li class="flex items-center gap-2 text-forest-700 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-gold-500 shrink-0"></span>Martes 2 de junio</li>
-                  <li class="flex items-center gap-2 text-forest-700 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-gold-500 shrink-0"></span>Martes 9 de junio</li>
-                  <li class="flex items-center gap-2 text-forest-700 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-gold-500 shrink-0"></span>Martes 16 de junio</li>
-                  <li class="flex items-center gap-2 text-forest-700 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-gold-500 shrink-0"></span>Martes 23 de junio</li>
+                  <li class="flex items-center gap-2 text-forest-700 text-sm"><span
+                      class="w-1.5 h-1.5 rounded-full bg-gold-500 shrink-0"></span>Martes 2 de junio</li>
+                  <li class="flex items-center gap-2 text-forest-700 text-sm"><span
+                      class="w-1.5 h-1.5 rounded-full bg-gold-500 shrink-0"></span>Martes 9 de junio</li>
+                  <li class="flex items-center gap-2 text-forest-700 text-sm"><span
+                      class="w-1.5 h-1.5 rounded-full bg-gold-500 shrink-0"></span>Martes 16 de junio</li>
+                  <li class="flex items-center gap-2 text-forest-700 text-sm"><span
+                      class="w-1.5 h-1.5 rounded-full bg-gold-500 shrink-0"></span>Martes 23 de junio</li>
                 </ul>
               </div>
               <div class="border-t border-sage-200 pt-4">
                 <p class="text-gold-600 text-xs font-semibold uppercase tracking-widest mb-3">Jueves · 09:00–11:00</p>
                 <ul class="space-y-2">
-                  <li class="flex items-center gap-2 text-forest-700 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-gold-500 shrink-0"></span>Jueves 4 de junio</li>
-                  <li class="flex items-center gap-2 text-forest-700 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-gold-500 shrink-0"></span>Jueves 11 de junio</li>
-                  <li class="flex items-center gap-2 text-forest-700 text-sm"><span class="w-1.5 h-1.5 rounded-full bg-gold-500 shrink-0"></span>Jueves 18 de junio</li>
+                  <li class="flex items-center gap-2 text-forest-700 text-sm"><span
+                      class="w-1.5 h-1.5 rounded-full bg-gold-500 shrink-0"></span>Jueves 4 de junio</li>
+                  <li class="flex items-center gap-2 text-forest-700 text-sm"><span
+                      class="w-1.5 h-1.5 rounded-full bg-gold-500 shrink-0"></span>Jueves 11 de junio</li>
+                  <li class="flex items-center gap-2 text-forest-700 text-sm"><span
+                      class="w-1.5 h-1.5 rounded-full bg-gold-500 shrink-0"></span>Jueves 18 de junio</li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="card-soft rounded-2xl border border-sage-200 p-5">
             <div class="flex gap-3 items-start">
-              <svg class="w-4 h-4 text-gold-500 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+              <svg class="w-4 h-4 text-gold-500 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
               </svg>
-              <p class="text-forest-600 text-xs leading-relaxed">La reserva definitiva se confirmará tras completar el pago. Sujeta a disponibilidad.</p>
+              <p class="text-forest-600 text-xs leading-relaxed">La reserva definitiva se confirmará tras completar el
+                pago. Sujeta a disponibilidad.</p>
             </div>
           </div>
         </aside>
 
         <!-- Formulario -->
-        <div class="lg:col-span-3">
+        <div class="w-full max-w-3xl">
           <div class="card-soft rounded-2xl border border-sage-200 p-7 md:p-9">
-
-            <form id="form-consulta-privada" novalidate
-              data-wc-form="consulta-privada"
-              data-wc-action="/wp-admin/admin-ajax.php"
-              data-wc-nonce="">
-
-              <!-- Nombre -->
-              <div class="mb-5">
-                <label for="cp-nombre" class="block text-forest-700 text-sm font-medium mb-1.5">Nombre completo <span class="text-gold-500" aria-hidden="true">*</span></label>
-                <input type="text" id="cp-nombre" name="cp_nombre" autocomplete="name" placeholder="Tu nombre completo" required
-                  class="w-full rounded-xl border border-sage-200 bg-white/80 px-4 py-3 text-forest-800 text-sm transition-all duration-200"
-                  style="outline:none;"
-                  onfocus="this.style.borderColor='#4a7c4e';this.style.boxShadow='0 0 0 3px rgba(74,124,78,0.12)';"
-                  onblur="this.style.borderColor='';this.style.boxShadow='';" />
-              </div>
-
-              <!-- Email -->
-              <div class="mb-5">
-                <label for="cp-email" class="block text-forest-700 text-sm font-medium mb-1.5">Email <span class="text-gold-500" aria-hidden="true">*</span></label>
-                <input type="email" id="cp-email" name="cp_email" autocomplete="email" placeholder="tu@email.com" required
-                  class="w-full rounded-xl border border-sage-200 bg-white/80 px-4 py-3 text-forest-800 text-sm transition-all duration-200"
-                  style="outline:none;"
-                  onfocus="this.style.borderColor='#4a7c4e';this.style.boxShadow='0 0 0 3px rgba(74,124,78,0.12)';"
-                  onblur="this.style.borderColor='';this.style.boxShadow='';" />
-              </div>
-
-              <!-- Teléfono -->
-              <div class="mb-5">
-                <label for="cp-telefono" class="block text-forest-700 text-sm font-medium mb-1.5">Teléfono</label>
-                <input type="tel" id="cp-telefono" name="cp_telefono" autocomplete="tel" placeholder="+34 600 000 000"
-                  class="w-full rounded-xl border border-sage-200 bg-white/80 px-4 py-3 text-forest-800 text-sm transition-all duration-200"
-                  style="outline:none;"
-                  onfocus="this.style.borderColor='#4a7c4e';this.style.boxShadow='0 0 0 3px rgba(74,124,78,0.12)';"
-                  onblur="this.style.borderColor='';this.style.boxShadow='';" />
-              </div>
-
-              <!-- Selector de horario -->
-              <fieldset class="mb-5">
-                <legend class="text-forest-700 text-sm font-medium mb-2.5">Horario preferido <span class="text-gold-500" aria-hidden="true">*</span></legend>
-                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-2">
-                  <label class="cp-slot cursor-pointer">
-                    <input type="radio" name="cp_horario" value="mar-02jun-13h" class="sr-only" required/>
-                    <span class="cp-slot-label block rounded-xl border border-sage-200 bg-white/60 px-3 py-2.5 text-center text-forest-700 text-xs font-medium transition-all duration-200 hover:border-forest-400 hover:bg-sage-100">
-                      <span class="block text-gold-600 text-[10px] font-semibold uppercase tracking-wider mb-0.5">Mar · 13–15h</span>2 junio
-                    </span>
-                  </label>
-                  <label class="cp-slot cursor-pointer">
-                    <input type="radio" name="cp_horario" value="mar-09jun-13h" class="sr-only"/>
-                    <span class="cp-slot-label block rounded-xl border border-sage-200 bg-white/60 px-3 py-2.5 text-center text-forest-700 text-xs font-medium transition-all duration-200 hover:border-forest-400 hover:bg-sage-100">
-                      <span class="block text-gold-600 text-[10px] font-semibold uppercase tracking-wider mb-0.5">Mar · 13–15h</span>9 junio
-                    </span>
-                  </label>
-                  <label class="cp-slot cursor-pointer">
-                    <input type="radio" name="cp_horario" value="mar-16jun-13h" class="sr-only"/>
-                    <span class="cp-slot-label block rounded-xl border border-sage-200 bg-white/60 px-3 py-2.5 text-center text-forest-700 text-xs font-medium transition-all duration-200 hover:border-forest-400 hover:bg-sage-100">
-                      <span class="block text-gold-600 text-[10px] font-semibold uppercase tracking-wider mb-0.5">Mar · 13–15h</span>16 junio
-                    </span>
-                  </label>
-                  <label class="cp-slot cursor-pointer">
-                    <input type="radio" name="cp_horario" value="mar-23jun-13h" class="sr-only"/>
-                    <span class="cp-slot-label block rounded-xl border border-sage-200 bg-white/60 px-3 py-2.5 text-center text-forest-700 text-xs font-medium transition-all duration-200 hover:border-forest-400 hover:bg-sage-100">
-                      <span class="block text-gold-600 text-[10px] font-semibold uppercase tracking-wider mb-0.5">Mar · 13–15h</span>23 junio
-                    </span>
-                  </label>
-                  <label class="cp-slot cursor-pointer">
-                    <input type="radio" name="cp_horario" value="jue-04jun-09h" class="sr-only"/>
-                    <span class="cp-slot-label block rounded-xl border border-sage-200 bg-white/60 px-3 py-2.5 text-center text-forest-700 text-xs font-medium transition-all duration-200 hover:border-forest-400 hover:bg-sage-100">
-                      <span class="block text-gold-600 text-[10px] font-semibold uppercase tracking-wider mb-0.5">Jue · 09–11h</span>4 junio
-                    </span>
-                  </label>
-                  <label class="cp-slot cursor-pointer">
-                    <input type="radio" name="cp_horario" value="jue-11jun-09h" class="sr-only"/>
-                    <span class="cp-slot-label block rounded-xl border border-sage-200 bg-white/60 px-3 py-2.5 text-center text-forest-700 text-xs font-medium transition-all duration-200 hover:border-forest-400 hover:bg-sage-100">
-                      <span class="block text-gold-600 text-[10px] font-semibold uppercase tracking-wider mb-0.5">Jue · 09–11h</span>11 junio
-                    </span>
-                  </label>
-                  <label class="cp-slot cursor-pointer">
-                    <input type="radio" name="cp_horario" value="jue-18jun-09h" class="sr-only"/>
-                    <span class="cp-slot-label block rounded-xl border border-sage-200 bg-white/60 px-3 py-2.5 text-center text-forest-700 text-xs font-medium transition-all duration-200 hover:border-forest-400 hover:bg-sage-100">
-                      <span class="block text-gold-600 text-[10px] font-semibold uppercase tracking-wider mb-0.5">Jue · 09–11h</span>18 junio
-                    </span>
-                  </label>
-                </div>
-              </fieldset>
-
-              <!-- Motivo de consulta -->
-              <div class="mb-5">
-                <label for="cp-motivo" class="block text-forest-700 text-sm font-medium mb-1.5">Motivo de consulta <span class="text-gold-500" aria-hidden="true">*</span></label>
-                <textarea id="cp-motivo" name="cp_motivo" rows="3" placeholder="¿Qué te gustaría trabajar en esta sesión?" required
-                  class="w-full rounded-xl border border-sage-200 bg-white/80 px-4 py-3 text-forest-800 text-sm transition-all duration-200 resize-none"
-                  style="outline:none;"
-                  onfocus="this.style.borderColor='#4a7c4e';this.style.boxShadow='0 0 0 3px rgba(74,124,78,0.12)';"
-                  onblur="this.style.borderColor='';this.style.boxShadow='';"
-                ></textarea>
-              </div>
-
-              <!-- Observaciones -->
-              <div class="mb-6">
-                <label for="cp-observaciones" class="block text-forest-700 text-sm font-medium mb-1.5">Observaciones</label>
-                <textarea id="cp-observaciones" name="cp_observaciones" rows="2" placeholder="Cualquier detalle adicional (opcional)"
-                  class="w-full rounded-xl border border-sage-200 bg-white/80 px-4 py-3 text-forest-800 text-sm transition-all duration-200 resize-none"
-                  style="outline:none;"
-                  onfocus="this.style.borderColor='#4a7c4e';this.style.boxShadow='0 0 0 3px rgba(74,124,78,0.12)';"
-                  onblur="this.style.borderColor='';this.style.boxShadow='';"
-                ></textarea>
-              </div>
-
-              <!-- Submit -->
-              <button type="submit" id="cp-submit-btn"
-                class="w-full inline-flex items-center justify-center gap-2 bg-forest-700 hover:bg-forest-800 text-white font-semibold px-8 py-4 rounded-full text-base transition-all duration-200 cursor-pointer">
+            <div class="mt-6 text-center">
+              <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ19n4DZF5r6Ebed6ZKa6M95Eq-xflgc08c1wi2z1cTUrLs0TfGVzGQfjit_Pn0ZISAngDFiIxg5?gv=true"
+                target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-600 text-white font-semibold px-8 py-4 rounded-full text-base transition-all duration-200 cursor-pointer shadow-lg">
                 <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                  <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-                Solicitar reserva
-              </button>
-              <p class="text-forest-500 text-xs text-center mt-3">La confirmación y el pago (160 €) se gestionarán posteriormente · Sujeto a disponibilidad</p>
+                Reservar consulta privada
+              </a>
+            </div>
+            <p class="text-forest-500 text-xs text-center mt-3">La confirmación y el pago (160 €) se gestionarán
+              posteriormente · Sujeto a disponibilidad</p>
 
             </form>
 
             <!-- Estado de éxito -->
             <div id="cp-success" class="hidden text-center py-6" role="status" aria-live="polite">
               <div class="w-16 h-16 bg-sage-100 rounded-full flex items-center justify-center mx-auto mb-5">
-                <svg class="w-8 h-8 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                <svg class="w-8 h-8 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
               <h3 class="font-serif text-forest-800 text-2xl mb-3">Solicitud recibida</h3>
-              <p class="text-forest-600 text-sm leading-relaxed max-w-xs mx-auto">Gracias. Nos pondremos en contacto contigo en breve para confirmar la reserva y coordinar el pago.</p>
+              <p class="text-forest-600 text-sm leading-relaxed max-w-xs mx-auto">Gracias. Nos pondremos en
+                contacto contigo en breve para confirmar la reserva y coordinar el pago.</p>
             </div>
-
           </div>
         </div>
 
       </div>
     </div>
   </section>
+
 
   <!-- ===================== FOOTER ===================== -->
   <footer class="bg-forest-900 pt-16 pb-8 px-6">
@@ -952,8 +1017,9 @@
         <div>
           <div class="flex items-center gap-3 mb-4">
             <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-              <circle cx="16" cy="16" r="15" stroke="#c9a84c" stroke-width="1.5"/>
-              <path d="M16 6 C10 6 7 11 7 16 C7 21 10 26 16 26 C22 26 25 21 25 16" stroke="#c9a84c" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <circle cx="16" cy="16" r="15" stroke="#c9a84c" stroke-width="1.5" />
+              <path d="M16 6 C10 6 7 11 7 16 C7 21 10 26 16 26 C22 26 25 21 25 16" stroke="#c9a84c" stroke-width="1.5"
+                fill="none" stroke-linecap="round" />
             </svg>
             <span class="text-white/80 font-serif text-sm">Wellness Mindbeauty &amp; THE CLUB</span>
           </div>
@@ -967,15 +1033,27 @@
           <h5 class="text-white/60 text-xs font-semibold uppercase tracking-widest mb-4">Contacto</h5>
           <ul class="space-y-2 text-white/50 text-xs">
             <li class="flex items-center gap-2">
-              <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.9 9.7 19.79 19.79 0 01.87 1.07 2 2 0 012.87 0h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0121.9 14l.02 2.92z"/></svg>
-              <a href="tel:+34664275129" class="hover:text-gold-400 transition-colors duration-200 cursor-pointer">664 275 129</a>
+              <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.9 9.7 19.79 19.79 0 01.87 1.07 2 2 0 012.87 0h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0121.9 14l.02 2.92z" />
+              </svg>
+              <a href="tel:+34664275129" class="hover:text-gold-400 transition-colors duration-200 cursor-pointer">664
+                275 129</a>
             </li>
             <li class="flex items-center gap-2">
-              <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
               Hotel Mar de Fulles · Alfondeguilla, Castellón
             </li>
             <li class="flex items-center gap-2">
-              <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
               18 – 20 de Mayo de 2026
             </li>
           </ul>
@@ -984,7 +1062,8 @@
         <!-- Reserva -->
         <div>
           <h5 class="text-white/60 text-xs font-semibold uppercase tracking-widest mb-4">Reservas</h5>
-          <p class="text-white/40 text-xs leading-relaxed mb-3">Pre-reserva del 50% antes del 23 de abril de 2026. Plazas limitadas.</p>
+          <p class="text-white/40 text-xs leading-relaxed mb-3">Pre-reserva del 50% antes del 23 de abril de 2026.
+            Plazas limitadas.</p>
           <p class="text-white/40 text-xs font-mono">IBAN: ES81 2100 8755 5113 0041 4618</p>
         </div>
 
@@ -996,26 +1075,39 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-white/35 text-xs leading-relaxed">
           <div>
             <p class="font-semibold text-white/50 mb-1">Responsable del tratamiento</p>
-            <p>María Luján · Wellness Mindbeauty &amp; THE CLUB. En cumplimiento del Reglamento (UE) 2016/679 (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales (LOPDGDD), los datos personales facilitados al realizar la reserva serán tratados con la finalidad de gestionar la inscripción al retiro y el envío de información relacionada con el evento.</p>
+            <p>María Luján · Wellness Mindbeauty &amp; THE CLUB. En cumplimiento del Reglamento (UE) 2016/679 (RGPD) y
+              la Ley Orgánica 3/2018 de Protección de Datos Personales (LOPDGDD), los datos personales facilitados al
+              realizar la reserva serán tratados con la finalidad de gestionar la inscripción al retiro y el envío de
+              información relacionada con el evento.</p>
           </div>
           <div>
             <p class="font-semibold text-white/50 mb-1">Condiciones de reserva y cancelación</p>
-            <p>La pre-reserva del 50% confirma la plaza. En caso de cancelación con más de 30 días de antelación, se reembolsará el 80% del importe abonado. Cancelaciones con menos de 30 días no son reembolsables, salvo causa mayor debidamente justificada. La organización se reserva el derecho a modificar horarios u orden de los contenidos sin que ello suponga alteración sustancial del programa.</p>
+            <p>La pre-reserva del 50% confirma la plaza. En caso de cancelación con más de 30 días de antelación, se
+              reembolsará el 80% del importe abonado. Cancelaciones con menos de 30 días no son reembolsables, salvo
+              causa mayor debidamente justificada. La organización se reserva el derecho a modificar horarios u orden de
+              los contenidos sin que ello suponga alteración sustancial del programa.</p>
           </div>
           <div>
             <p class="font-semibold text-white/50 mb-1">Imagen y derechos</p>
-            <p>Durante el retiro podrán realizarse fotografías o grabaciones con fines formativos y promocionales. Los participantes podrán manifestar su oposición en cualquier momento. Los contenidos, materiales y dinámicas del retiro son propiedad intelectual de Wellness Mindbeauty &amp; THE CLUB y no podrán reproducirse sin autorización expresa.</p>
+            <p>Durante el retiro podrán realizarse fotografías o grabaciones con fines formativos y promocionales. Los
+              participantes podrán manifestar su oposición en cualquier momento. Los contenidos, materiales y dinámicas
+              del retiro son propiedad intelectual de Wellness Mindbeauty &amp; THE CLUB y no podrán reproducirse sin
+              autorización expresa.</p>
           </div>
           <div>
             <p class="font-semibold text-white/50 mb-1">Derechos y reclamaciones</p>
-            <p>Puede ejercer sus derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición contactando en el número 664 275 129. Tiene derecho a presentar reclamación ante la Agencia Española de Protección de Datos (aepd.es). El presente retiro se rige por la legislación española, siendo competentes los juzgados y tribunales de Castellón de la Plana para cualquier litigio.</p>
+            <p>Puede ejercer sus derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición
+              contactando en el número 664 275 129. Tiene derecho a presentar reclamación ante la Agencia Española de
+              Protección de Datos (aepd.es). El presente retiro se rige por la legislación española, siendo competentes
+              los juzgados y tribunales de Castellón de la Plana para cualquier litigio.</p>
           </div>
         </div>
       </div>
 
       <!-- Copyright -->
       <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
-        <p class="text-white/25 text-xs">© 2026 Wellness Mindbeauty &amp; THE CLUB · María Luján. Todos los derechos reservados.</p>
+        <p class="text-white/25 text-xs">© 2026 Wellness Mindbeauty &amp; THE CLUB · María Luján. Todos los derechos
+          reservados.</p>
         <p class="text-white/20 text-xs">Los horarios de la formación son orientativos.</p>
       </div>
 
@@ -1044,7 +1136,7 @@
 
     // ---- Day tabs ----
     function showDay(day) {
-      ['lunes','martes','miercoles'].forEach(d => {
+      ['lunes', 'martes', 'miercoles'].forEach(d => {
         document.getElementById('day-' + d).classList.toggle('hidden', d !== day);
         const tab = document.getElementById('tab-' + d);
         if (d === day) {
@@ -1068,14 +1160,14 @@
         document.getElementById('countdown').innerHTML = '<p class="text-white/70 text-sm font-medium">El retiro ha comenzado</p>';
         return;
       }
-      const days  = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
       const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-      const mins  = Math.floor((diff / (1000 * 60)) % 60);
-      const secs  = Math.floor((diff / 1000) % 60);
-      document.getElementById('cd-days').textContent  = String(days).padStart(2,'0');
-      document.getElementById('cd-hours').textContent = String(hours).padStart(2,'0');
-      document.getElementById('cd-min').textContent   = String(mins).padStart(2,'0');
-      document.getElementById('cd-sec').textContent   = String(secs).padStart(2,'0');
+      const mins = Math.floor((diff / (1000 * 60)) % 60);
+      const secs = Math.floor((diff / 1000) % 60);
+      document.getElementById('cd-days').textContent = String(days).padStart(2, '0');
+      document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('cd-min').textContent = String(mins).padStart(2, '0');
+      document.getElementById('cd-sec').textContent = String(secs).padStart(2, '0');
     }
     updateCountdown();
     setInterval(updateCountdown, 1000);
@@ -1133,5 +1225,5 @@
   </script>
 
 </body>
-</html>
 
+</html>
