@@ -1,0 +1,882 @@
+<!-- ===================== NAVBAR ===================== -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-6 lg:px-12">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <circle cx="16" cy="16" r="15" stroke="#c9a84c" stroke-width="1.5" />
+                <path d="M16 6 C10 6 7 11 7 16 C7 21 10 26 16 26 C22 26 25 21 25 16" stroke="#c9a84c" stroke-width="1.5"
+                    fill="none" stroke-linecap="round" />
+                <path d="M16 10 C13 10 11 13 11 16 C11 19 13 22 16 22" stroke="rgba(201,168,76,0.5)" stroke-width="1"
+                    fill="none" stroke-linecap="round" />
+            </svg>
+            <span class="text-white font-serif font-medium tracking-wide text-sm">Wellness Mindbeauty & THE
+                CLUB</span>
+        </div>
+        <!-- CTA nav -->
+        <a href="#reserva"
+            class="hidden md:inline-flex items-center gap-2 bg-gold-500 hover:bg-gold-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-colors duration-200 cursor-pointer">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            Reservar plaza
+        </a>
+    </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <!-- Video background -->
+    <video class="hero-video absolute inset-0" src="/clickandbuilds/4060979-uhd_3840_2160_30fps.mp4" autoplay muted loop
+        playsinline aria-hidden="true"></video>
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-b from-forest-900/80 via-forest-900/60 to-forest-900/85"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+        <p class="animate-fade-in-down text-gold-400 font-sans font-medium tracking-[0.25em] uppercase text-sm mb-6">
+            Retiro Formativo II · 18–20 Mayo 2026
+        </p>
+        <h1 class="animate-fade-in-up font-serif text-white text-shadow leading-tight mb-6"
+            style="font-size: clamp(2.4rem, 6vw, 4.5rem);">
+            Empresarias de la<br>
+            <em class="text-gold-400 not-italic">Salud y el Bienestar</em>
+        </h1>
+        <p
+            class="animate-fade-in-up-2 text-white/85 font-sans text-lg md:text-xl leading-relaxed max-w-2xl mx-auto mb-10 text-shadow-sm">
+            Un espacio para parar, ordenar y tomar decisiones reales.<br class="hidden md:block" />
+            Menos ruido. Más claridad. Decisiones concretas.
+        </p>
+        <div class="animate-fade-in-up-3 flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#reserva"
+                class="inline-flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-600 text-white font-semibold px-8 py-4 rounded-full text-base transition-all duration-200 cursor-pointer shadow-lg">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                Reservar mi plaza
+            </a>
+            <a href="#programa"
+                class="inline-flex items-center justify-center gap-2 border border-white/40 hover:border-white/70 text-white font-medium px-8 py-4 rounded-full text-base transition-all duration-200 cursor-pointer">
+                Ver el programa
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 9l-7 7-7-7" />
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- Countdown -->
+    <div class="absolute bottom-10 left-0 right-0 flex justify-center z-10 px-6">
+        <div class="flex gap-4 md:gap-8" id="countdown" aria-label="Tiempo hasta el retiro">
+            <div class="countdown-box rounded-xl px-5 py-3 text-center min-w-[72px]">
+                <div class="text-white font-serif text-2xl md:text-3xl font-bold" id="cd-days">—</div>
+                <div class="text-white/60 text-xs uppercase tracking-widest mt-0.5">Días</div>
+            </div>
+            <div class="countdown-box rounded-xl px-5 py-3 text-center min-w-[72px]">
+                <div class="text-white font-serif text-2xl md:text-3xl font-bold" id="cd-hours">—</div>
+                <div class="text-white/60 text-xs uppercase tracking-widest mt-0.5">Horas</div>
+            </div>
+            <div class="countdown-box rounded-xl px-5 py-3 text-center min-w-[72px]">
+                <div class="text-white font-serif text-2xl md:text-3xl font-bold" id="cd-min">—</div>
+                <div class="text-white/60 text-xs uppercase tracking-widest mt-0.5">Min</div>
+            </div>
+            <div class="countdown-box rounded-xl px-5 py-3 text-center min-w-[72px]">
+                <div class="text-white font-serif text-2xl md:text-3xl font-bold" id="cd-sec">—</div>
+                <div class="text-white/60 text-xs uppercase tracking-widest mt-0.5">Seg</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div
+        class="absolute bottom-36 md:bottom-32 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1 opacity-50">
+        <div class="w-px h-8 bg-white/60 animate-pulse"></div>
+    </div>
+</section>
+
+<!-- ===================== PROPÓSITO ===================== -->
+<section class="py-24 px-6 bg-cream">
+    <div class="max-w-5xl mx-auto text-center">
+        <p class="reveal text-gold-600 font-sans font-medium tracking-[0.2em] uppercase text-sm mb-4">El objetivo
+            del retiro</p>
+        <h2 class="reveal font-serif text-forest-800 text-4xl md:text-5xl mb-6 gold-line">"Parar."</h2>
+        <p class="reveal text-forest-700 text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto mt-8 mb-16">
+            Vamos a crear un espacio para parar, ordenar y tomar decisiones reales.
+            No es un retiro de productividad. Es un retiro de <strong class="text-forest-800">claridad.</strong>
+        </p>
+
+        <!-- Saldrás con -->
+        <div class="reveal grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <div class="card-soft rounded-2xl p-6 border border-sage-200 text-left">
+                <div class="w-10 h-10 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h3 class="font-serif text-forest-800 text-lg mb-2">Menos ruido mental</h3>
+                <p class="text-forest-600 text-sm leading-relaxed">Saldrás con la cabeza ordenada y la carga
+                    reducida.</p>
+            </div>
+
+            <div class="card-soft rounded-2xl p-6 border border-sage-200 text-left">
+                <div class="w-10 h-10 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="3" />
+                        <path
+                            d="M12 1v3m0 16v3M4.22 4.22l2.12 2.12m11.32 11.32l2.12 2.12M1 12h3m16 0h3M4.22 19.78l2.12-2.12M18.66 5.34l2.12-2.12" />
+                    </svg>
+                </div>
+                <h3 class="font-serif text-forest-800 text-lg mb-2">Claridad estratégica</h3>
+                <p class="text-forest-600 text-sm leading-relaxed">Verás tu negocio desde fuera y sabrás adónde va.
+                </p>
+            </div>
+
+            <div class="card-soft rounded-2xl p-6 border border-sage-200 text-left">
+                <div class="w-10 h-10 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <h3 class="font-serif text-forest-800 text-lg mb-2">Decisiones concretas</h3>
+                <p class="text-forest-600 text-sm leading-relaxed">No intenciones. Tres decisiones reales con las
+                    que actuar.</p>
+            </div>
+
+            <div class="card-soft rounded-2xl p-6 border border-sage-200 text-left">
+                <div class="w-10 h-10 bg-sage-100 rounded-xl flex items-center justify-center mb-4">
+                    <svg class="w-5 h-5 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path
+                            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                </div>
+                <h3 class="font-serif text-forest-800 text-lg mb-2">Mujeres que inspiran</h3>
+                <p class="text-forest-600 text-sm leading-relaxed">Un grupo que no compite. Que acompaña y motiva.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===================== PARA QUIÉN ===================== -->
+<section class="py-24 px-6 bg-parchment">
+    <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+            <p class="reveal text-gold-600 font-sans font-medium tracking-[0.2em] uppercase text-sm mb-4">
+                Identifícate</p>
+            <h2 class="reveal font-serif text-forest-800 text-4xl md:text-5xl gold-line">¿Es este retiro para mí?
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <div class="reveal card-soft rounded-2xl p-8 border-l-4 border-forest-600">
+                <p class="font-serif text-forest-800 text-xl mb-3 italic">"Todo funciona… pero yo no estoy
+                    tranquila."</p>
+                <p class="text-forest-600 text-base leading-relaxed">Tu negocio avanza, tu equipo responde, todo "va
+                    bien"… pero tu cabeza no para. <strong class="text-forest-700">Este retiro es para ti si
+                        necesitas bajar el ruido y volver a sentir claridad.</strong></p>
+            </div>
+
+            <div class="reveal card-soft rounded-2xl p-8 border-l-4 border-forest-600">
+                <p class="font-serif text-forest-800 text-xl mb-3 italic">"Estoy sosteniendo demasiado."</p>
+                <p class="text-forest-600 text-base leading-relaxed">Decides, supervisas, empujas… aunque podrías
+                    delegar más, no terminas de hacerlo. <strong class="text-forest-700">Aquí vas a entender qué
+                        debes dejar de hacer y cómo hacerlo sin perder control.</strong></p>
+            </div>
+
+            <div class="reveal card-soft rounded-2xl p-8 border-l-4 border-gold-500">
+                <p class="font-serif text-forest-800 text-xl mb-3 italic">"Tengo ambición de crecer pero no sé por
+                    dónde."</p>
+                <p class="text-forest-600 text-base leading-relaxed">Sabes que quieres más, pero no tienes definido
+                    el camino. <strong class="text-forest-700">Este espacio es para ordenar, enfocar y decidir con
+                        criterio.</strong></p>
+            </div>
+
+            <div class="reveal card-soft rounded-2xl p-8 border-l-4 border-gold-500">
+                <p class="font-serif text-forest-800 text-xl mb-3 italic">"Necesito parar… pero no encuentro el
+                    momento."</p>
+                <p class="text-forest-600 text-base leading-relaxed">Siempre hay algo urgente, alguien que depende
+                    de ti, una decisión pendiente. <strong class="text-forest-700">Este retiro es ese
+                        momento.</strong></p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===================== PROGRAMA ===================== -->
+<section id="programa" class="py-24 px-6 bg-cream">
+    <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+            <p class="reveal text-gold-600 font-sans font-medium tracking-[0.2em] uppercase text-sm mb-4">18, 19 y
+                20 de Mayo 2026</p>
+            <h2 class="reveal font-serif text-forest-800 text-4xl md:text-5xl gold-line">El programa</h2>
+        </div>
+
+        <!-- Tabs días -->
+        <div class="reveal flex justify-center mb-10" role="tablist" aria-label="Días del retiro">
+            <div class="inline-flex bg-sage-100 rounded-full p-1.5 gap-1">
+                <button onclick="showDay('lunes')" id="tab-lunes" role="tab" aria-selected="true"
+                    class="block-tab px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-forest-700 cursor-pointer">Lunes
+                    18</button>
+                <button onclick="showDay('martes')" id="tab-martes" role="tab" aria-selected="false"
+                    class="block-tab px-5 py-2.5 rounded-full text-sm font-semibold text-forest-700 hover:bg-sage-200 cursor-pointer">Martes
+                    19</button>
+                <button onclick="showDay('miercoles')" id="tab-miercoles" role="tab" aria-selected="false"
+                    class="block-tab px-5 py-2.5 rounded-full text-sm font-semibold text-forest-700 hover:bg-sage-200 cursor-pointer">Miércoles
+                    20</button>
+            </div>
+        </div>
+
+        <!-- Día Lunes -->
+        <div id="day-lunes" role="tabpanel">
+            <div class="text-center mb-8">
+                <span
+                    class="inline-block bg-forest-100 text-forest-700 font-semibold px-4 py-1.5 rounded-full text-sm tracking-wide">LLEGADA
+                    &amp; APERTURA</span>
+            </div>
+            <div class="space-y-4 max-w-2xl mx-auto">
+                <div class="card-soft rounded-2xl p-6 flex gap-5 border border-sage-200">
+                    <div class="text-gold-500 font-serif font-semibold text-sm w-16 shrink-0 pt-0.5">17:00</div>
+                    <div>
+                        <h4 class="font-serif text-forest-800 text-lg mb-1">Llegada y bienvenida</h4>
+                        <p class="text-forest-600 text-sm">Recepción, acomodación y sorpresas.</p>
+                    </div>
+                </div>
+                <div class="card-soft rounded-2xl p-6 flex gap-5 border border-sage-200">
+                    <div class="text-gold-500 font-serif font-semibold text-sm w-16 shrink-0 pt-0.5">17:30</div>
+                    <div>
+                        <h4 class="font-serif text-forest-800 text-lg mb-1">Apertura del retiro</h4>
+                        <p class="text-forest-600 text-sm">Presentación y marco de intención.</p>
+                    </div>
+                </div>
+                <div class="card-soft rounded-2xl p-6 flex gap-5 border border-sage-200">
+                    <div class="text-gold-500 font-serif font-semibold text-sm w-16 shrink-0 pt-0.5">19:30</div>
+                    <div>
+                        <h4 class="font-serif text-forest-800 text-lg mb-1">Cena y vinos</h4>
+                        <p class="text-forest-600 text-sm">Mesa compartida. Sin agenda. Primer tejido grupal.</p>
+                    </div>
+                </div>
+                <div class="card-soft rounded-2xl p-6 flex gap-5 border-l-4 border-forest-500">
+                    <div class="text-gold-500 font-serif font-semibold text-sm w-16 shrink-0 pt-0.5">21:00</div>
+                    <div>
+                        <h4 class="font-serif text-forest-800 text-lg mb-1">Sesión guiada inicial</h4>
+                        <p class="text-forest-600 text-sm italic">Salir del modo ejecución. Entrar en modo
+                            observación.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Día Martes -->
+        <div id="day-martes" role="tabpanel" class="hidden">
+            <div class="text-center mb-8">
+                <span
+                    class="inline-block bg-forest-100 text-forest-700 font-semibold px-4 py-1.5 rounded-full text-sm tracking-wide">PENSAR
+                    · ORDENAR Y VER CON CLARIDAD</span>
+            </div>
+            <div class="space-y-4 max-w-2xl mx-auto">
+                <div class="card-soft rounded-2xl p-6 flex gap-5 border border-sage-200">
+                    <div class="text-gold-500 font-serif font-semibold text-sm w-16 shrink-0 pt-0.5">08:00</div>
+                    <div>
+                        <h4 class="font-serif text-forest-800 text-lg mb-1">Cuerpo y movimiento</h4>
+                        <p class="text-forest-600 text-sm">Activar sin agotar. Al aire libre.</p>
+                    </div>
+                </div>
+                <div class="card-soft rounded-2xl p-6 flex gap-5 border border-sage-200">
+                    <div class="text-gold-500 font-serif font-semibold text-sm w-16 shrink-0 pt-0.5">09:30</div>
+                    <div>
+                        <div
+                            class="inline-block bg-forest-700 text-white text-xs font-semibold px-3 py-0.5 rounded-full mb-2">
+                            BLOQUE 1 — VER LA REALIDAD</div>
+                        <h4 class="font-serif text-forest-800 text-lg mb-1">¿Dónde estoy empresarialmente?</h4>
+                        <p class="text-forest-600 text-sm italic">"Mi empresa hoy" — diagnóstico individual y puesta
+                            en común.</p>
+                    </div>
+                </div>
+                <div class="card-soft rounded-2xl p-6 flex gap-5 border border-sage-200">
+                    <div class="text-gold-500 font-serif font-semibold text-sm w-16 shrink-0 pt-0.5">12:00</div>
+                    <div>
+                        <div
+                            class="inline-block bg-forest-700 text-white text-xs font-semibold px-3 py-0.5 rounded-full mb-2">
+                            BLOQUE 2 — SIMPLIFICAR Y LIBERAR</div>
+                        <h4 class="font-serif text-forest-800 text-lg mb-1">IA, Escala y Errores</h4>
+                        <p class="text-forest-600 text-sm">Con Alejandro Martínez, experto invitado. Qué
+                            automatizar, cómo escalar sin complejizar.</p>
+                        <p class="text-forest-600 text-sm mt-1 italic">13:30 — Caso real: Capa digital aplicada
+                            (Sorpresa)</p>
+                    </div>
+                </div>
+                <div class="card-soft rounded-2xl p-6 flex gap-5 border border-sage-200">
+                    <div class="text-gold-500 font-serif font-semibold text-sm w-16 shrink-0 pt-0.5">16:00</div>
+                    <div>
+                        <div
+                            class="inline-block bg-forest-700 text-white text-xs font-semibold px-3 py-0.5 rounded-full mb-2">
+                            BLOQUE 3 — LIDERAZGO Y EQUIPO</div>
+                        <h4 class="font-serif text-forest-800 text-lg mb-1">Liderazgo y equipos</h4>
+                        <p class="text-forest-600 text-sm">Con María Luján. Cómo soltar sin perder dirección.</p>
+                    </div>
+                </div>
+                <div class="card-soft rounded-2xl p-6 flex gap-5 border-l-4 border-gold-500">
+                    <div class="text-gold-500 font-serif font-semibold text-sm w-16 shrink-0 pt-0.5">18:30</div>
+                    <div>
+                        <div
+                            class="inline-block bg-gold-500 text-white text-xs font-semibold px-3 py-0.5 rounded-full mb-2">
+                            BLOQUE 4 — CRECER SIN COLAPSAR</div>
+                        <h4 class="font-serif text-forest-800 text-lg mb-1">Nuevas capas de rentabilidad</h4>
+                        <p class="text-forest-600 text-sm">María Luján con la participación de Alejandro Martínez
+                            como experto invitado. Nuevas líneas, nuevos formatos.</p>
+                        <p class="text-forest-600 text-sm mt-1 italic">19:30 — Puerta a la inversión · Intervención
+                            de experto invitado: Alejandro Martínez</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Día Miércoles -->
+        <div id="day-miercoles" role="tabpanel" class="hidden">
+            <div class="text-center mb-8">
+                <span
+                    class="inline-block bg-gold-400/20 text-gold-600 font-semibold px-4 py-1.5 rounded-full text-sm tracking-wide">CLARIDAD
+                    Y DECISIÓN</span>
+            </div>
+            <div class="space-y-4 max-w-2xl mx-auto">
+                <div class="card-soft rounded-2xl p-6 flex gap-5 border-l-4 border-gold-500">
+                    <div class="text-gold-500 font-serif font-semibold text-sm w-16 shrink-0 pt-0.5">09:30</div>
+                    <div>
+                        <div
+                            class="inline-block bg-gold-500 text-white text-xs font-semibold px-3 py-0.5 rounded-full mb-2">
+                            BLOQUE FINAL</div>
+                        <h4 class="font-serif text-forest-800 text-lg mb-1">Análisis de lo construido</h4>
+                        <p class="text-forest-600 text-sm">Revisión colectiva. ¿Qué cambió en mi mirada?</p>
+                    </div>
+                </div>
+                <div class="card-soft rounded-2xl p-6 flex gap-5 border border-sage-200">
+                    <div class="text-gold-500 font-serif font-semibold text-sm w-16 shrink-0 pt-0.5">10:30</div>
+                    <div>
+                        <h4 class="font-serif text-forest-800 text-lg mb-1">"Mis 3 decisiones"</h4>
+                        <p class="text-forest-600 text-sm">Cada participante define tres decisiones concretas con
+                            las que sale del retiro.</p>
+                    </div>
+                </div>
+                <div class="card-soft rounded-2xl p-6 flex gap-5 border border-sage-200">
+                    <div class="text-gold-500 font-serif font-semibold text-sm w-16 shrink-0 pt-0.5">11:15</div>
+                    <div>
+                        <h4 class="font-serif text-forest-800 text-lg mb-1">Ronda: "Por dónde sigo"</h4>
+                        <p class="text-forest-600 text-sm">Cada participante comparte en voz alta su compromiso
+                            principal.</p>
+                    </div>
+                </div>
+                <div class="card-soft rounded-2xl p-6 flex gap-5 border border-sage-200">
+                    <div class="text-gold-500 font-serif font-semibold text-sm w-16 shrink-0 pt-0.5">12:00</div>
+                    <div>
+                        <h4 class="font-serif text-forest-800 text-lg mb-1">Despedida y Cierre</h4>
+                        <p class="text-forest-600 text-sm">Ritual de cierre. Salida a las 13:00h.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===================== PONENTES ===================== -->
+<section class="py-24 px-6 bg-forest-800">
+    <div class="max-w-5xl mx-auto text-center">
+        <p class="reveal text-gold-400 font-sans font-medium tracking-[0.2em] uppercase text-sm mb-4">El Retiro</p>
+        <h2 class="reveal font-serif text-white text-4xl md:text-5xl mb-6 gold-line">La voz de María Luján</h2>
+        <p class="reveal max-w-3xl mx-auto text-white/65 text-base md:text-lg leading-relaxed mb-14">Este retiro
+            nace de la visión de María Luján de crear el espacio que muchas necesitan: parar, soltar el ruido y
+            volver a la claridad.</p>
+
+        <div class="reveal space-y-8 max-w-4xl mx-auto">
+            <div class="card-soft rounded-[2rem] border border-white/10 bg-white/8 p-8 md:p-10 text-left">
+                <div class="flex flex-col md:flex-row md:items-center gap-8">
+                    <div
+                        class="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden shadow-lg ring-2 ring-white/20 shrink-0 mx-auto md:mx-0">
+                        <img src="/clickandbuilds/mlretiro.webp" alt="María Luján" class="w-full h-full object-cover"
+                            style="object-position: center 18%;" />
+                    </div>
+                    <div class="flex-1 text-center md:text-left">
+                        <span
+                            class="inline-flex items-center rounded-full bg-gold-500/15 border border-gold-400/30 px-4 py-1.5 text-xs font-semibold tracking-[0.22em] uppercase text-gold-400 mb-4">Creadora
+                            del retiro</span>
+                        <h3 class="font-serif text-[#7C897C] text-3xl md:text-4xl mb-2">María Luján</h3>
+                        <p class="text-gold-400 text-sm font-medium tracking-wider uppercase mb-4">Dirección ·
+                            Liderazgo · Visión</p>
+                        <p class="text-[#7C897C] text-base leading-relaxed max-w-2xl">Fundadora de Wellness
+                            Mindbeauty & THE CLUB y creadora de esta experiencia. Guía el retiro de principio a fin,
+                            sosteniendo la visión, el contenido y las decisiones clave que se trabajan durante esos
+                            días.</p>
+                        <div class="mt-6 flex flex-wrap items-center justify-center md:justify-start gap-3">
+                            <a href="https://www.instagram.com/marialujanvlc/" target="_blank" rel="noopener noreferrer"
+                                class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/8 px-4 py-2 text-sm font-medium text-[#7C897C] transition-colors duration-200 hover:border-gold-400/50 hover:bg-white/12 hover:text-[#7C897C]"
+                                aria-label="Instagram de María Luján">
+                                <svg class="h-4 w-4 text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.8" aria-hidden="true">
+                                    <rect x="3.5" y="3.5" width="17" height="17" rx="4"></rect>
+                                    <circle cx="12" cy="12" r="4"></circle>
+                                    <circle cx="17.5" cy="6.5" r="1"></circle>
+                                </svg>
+                                Instagram
+                            </a>
+                            <a href="https://www.linkedin.com/in/maria-luj%C3%A1n-6836955a/" target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/8 px-4 py-2 text-sm font-medium text-[#7C897C] transition-colors duration-200 hover:border-gold-400/50 hover:bg-white/12 hover:text-[#7C897C]"
+                                aria-label="LinkedIn de María Luján">
+                                <svg class="h-4 w-4 text-gold-400" viewBox="0 0 24 24" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.38a1.56 1.56 0 0 1 0 3.12zM5.5 10h2.9v8.5H5.5zM10.2 10h2.78v1.16h.04c.39-.73 1.34-1.5 2.76-1.5 2.95 0 3.5 1.94 3.5 4.47v4.37h-2.9v-3.88c0-.93-.02-2.12-1.29-2.12-1.29 0-1.49 1.01-1.49 2.05v3.95h-2.9z">
+                                    </path>
+                                </svg>
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-2xl mx-auto rounded-2xl border border-white/10 bg-white/6 px-6 py-7 text-center">
+                <p class="text-white/45 text-xs font-semibold tracking-[0.24em] uppercase mb-3">Experto invitado</p>
+                <div class="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4 shadow-lg ring-2 ring-white/10">
+                    <img src="/clickandbuilds/alejandroretiro.webp" alt="Alejandro Martínez"
+                        class="w-full h-full object-cover" />
+                </div>
+                <h3 class="font-serif text-white text-2xl mb-2">Alejandro Martínez</h3>
+                <p class="text-gold-400 text-sm font-medium tracking-wider uppercase mb-3">IA y Estrategia</p>
+                <p class="text-white/65 text-sm leading-relaxed max-w-xl mx-auto">Aporta una perspectiva técnica y
+                    estratégica en bloques clave del retiro, en plena sintonía con la dirección y enfoque de María
+                    Luján.</p>
+                <div class="mt-5 flex items-center justify-center">
+                    <a href="https://www.linkedin.com/in/alejandromartinezfuster/" target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/8 px-4 py-2 text-sm font-medium text-white/90 transition-colors duration-200 hover:border-gold-400/50 hover:bg-white/12 hover:text-white"
+                        aria-label="LinkedIn de Alejandro Martínez">
+                        <svg class="h-4 w-4 text-gold-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M6.94 8.5H3.56V20h3.38V8.5zM5.25 3A1.96 1.96 0 103 4.96 1.98 1.98 0 005.25 3zM20.44 20h-3.37v-5.59c0-1.33 0-3.05-1.86-3.05s-2.15 1.45-2.15 2.95V20H9.69V8.5h3.24v1.57h.05a3.56 3.56 0 013.2-1.76c3.42 0 4.05 2.25 4.05 5.18V20z">
+                            </path>
+                        </svg>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== TARIFAS ===================== -->
+<section id="reserva" class="py-24 px-6 bg-cream">
+    <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+            <p class="reveal text-gold-600 font-sans font-medium tracking-[0.2em] uppercase text-sm mb-4">2 noches
+                todo incluido · Excepto traslados</p>
+            <h2 class="reveal font-serif text-forest-800 text-4xl md:text-5xl gold-line">Tarifas por persona</h2>
+            <p class="reveal text-forest-600 mt-8 text-base">Pre-reserva del 50% antes del <strong>23 de
+                    Abril</strong>. Plazas limitadas.</p>
+        </div>
+
+        <div class="reveal grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <!-- Individual -->
+            <div class="price-card card-soft rounded-2xl border border-sage-200 overflow-hidden cursor-pointer">
+                <div class="bg-sage-100 px-6 py-5 border-b border-sage-200">
+                    <div class="flex items-center gap-3 mb-1">
+                        <svg class="w-5 h-5 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg>
+                        <h3 class="font-serif text-forest-800 text-xl">Individual</h3>
+                    </div>
+                    <p class="text-forest-600 text-sm">Habitación propia</p>
+                </div>
+                <div class="px-6 py-6">
+                    <div class="mb-4">
+                        <p class="text-forest-500 text-xs uppercase tracking-wider mb-1">Primera vez</p>
+                        <p class="font-serif text-forest-800 text-3xl font-bold">770 <span class="text-lg">€</span>
+                        </p>
+                    </div>
+                    <div class="border-t border-sage-200 pt-4">
+                        <p class="text-forest-500 text-xs uppercase tracking-wider mb-1">Repite o consultora</p>
+                        <p class="font-serif text-forest-700 text-2xl font-semibold">680 <span
+                                class="text-base">€</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doble compartida — destacada -->
+            <div
+                class="price-card rounded-2xl overflow-hidden border-2 border-forest-600 shadow-xl cursor-pointer relative">
+                <div class="absolute top-0 left-0 right-0 text-center">
+                    <span
+                        class="inline-block bg-gold-500 text-white text-xs font-bold px-4 py-1 tracking-wider uppercase">Más
+                        elegida</span>
+                </div>
+                <div class="bg-forest-700 px-6 pt-9 pb-5 border-b border-forest-600">
+                    <div class="flex items-center gap-3 mb-1">
+                        <svg class="w-5 h-5 text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                        </svg>
+                        <h3 class="font-serif text-white text-xl">Doble compartida</h3>
+                    </div>
+                    <p class="text-white/60 text-sm">Habitación para dos</p>
+                </div>
+                <div class="bg-white px-6 py-6">
+                    <div class="mb-4">
+                        <p class="text-forest-500 text-xs uppercase tracking-wider mb-1">Primera vez</p>
+                        <p class="font-serif text-forest-800 text-3xl font-bold">680 <span class="text-lg">€</span>
+                        </p>
+                    </div>
+                    <div class="border-t border-sage-200 pt-4">
+                        <p class="text-forest-500 text-xs uppercase tracking-wider mb-1">Repite o consultora</p>
+                        <p class="font-serif text-forest-700 text-2xl font-semibold">590 <span
+                                class="text-base">€</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Albergue -->
+            <div class="price-card card-soft rounded-2xl border border-sage-200 overflow-hidden cursor-pointer">
+                <div class="bg-sage-100 px-6 py-5 border-b border-sage-200">
+                    <div class="flex items-center gap-3 mb-1">
+                        <svg class="w-5 h-5 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                            <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg>
+                        <h3 class="font-serif text-forest-800 text-xl">Albergue</h3>
+                    </div>
+                    <p class="text-forest-600 text-sm">Habitación de 3/4 personas</p>
+                </div>
+                <div class="px-6 py-6">
+                    <div class="mb-4">
+                        <p class="text-forest-500 text-xs uppercase tracking-wider mb-1">Primera vez</p>
+                        <p class="font-serif text-forest-800 text-3xl font-bold">660 <span class="text-lg">€</span>
+                        </p>
+                    </div>
+                    <div class="border-t border-sage-200 pt-4">
+                        <p class="text-forest-500 text-xs uppercase tracking-wider mb-1">Repite o consultora</p>
+                        <p class="font-serif text-forest-700 text-2xl font-semibold">580 <span
+                                class="text-base">€</span></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="reveal text-center text-forest-600 text-sm mt-6 flex items-center justify-center gap-2">
+            <svg class="w-4 h-4 text-gold-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+            10% de descuento por asistente referida
+        </p>
+
+        <!-- CTA reserva -->
+        <div class="reveal mt-12 text-center">
+            <div class="card-soft rounded-2xl border border-sage-200 p-8 md:p-10 max-w-lg mx-auto">
+                <h3 class="font-serif text-forest-800 text-2xl mb-2">¿Lista para reservar?</h3>
+                <p class="text-forest-600 text-sm mb-6 leading-relaxed">Plazas limitadas. Pre-reserva del 50% antes
+                    del <strong>23 de abril</strong>. Contacta con María Luján para confirmar disponibilidad.</p>
+                <a href="tel:+34664275129"
+                    class="inline-flex items-center justify-center gap-2 bg-forest-700 hover:bg-forest-800 text-white font-semibold px-8 py-4 rounded-full text-base transition-colors duration-200 cursor-pointer w-full mb-3">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.9 9.7 19.79 19.79 0 01.87 1.07 2 2 0 012.87 0h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0121.9 14l.02 2.92z" />
+                    </svg>
+                    664 275 129
+                </a>
+                <div class="text-forest-500 text-xs mt-2">
+                    <span>IBAN: ES81 2100 8755 5113 0041 4618</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===================== LUGAR ===================== -->
+<section class="py-24 px-6 bg-forest-900 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+        <div
+            class="absolute top-0 right-0 w-96 h-96 bg-gold-400 rounded-full filter blur-3xl transform translate-x-1/2 -translate-y-1/2">
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-80 h-80 bg-sage-300 rounded-full filter blur-3xl transform -translate-x-1/2 translate-y-1/2">
+        </div>
+    </div>
+    <div class="relative max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+            <p class="reveal text-gold-400 font-sans font-medium tracking-[0.2em] uppercase text-sm mb-4">Dónde</p>
+            <h2 class="reveal font-serif text-white text-4xl md:text-5xl gold-line">Hotel Mar de Fulles</h2>
+        </div>
+
+        <div class="reveal grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+
+            <a href="https://www.google.com/maps/search/?api=1&query=Hotel+Mar+de+Fulles+Alfondeguilla+Castell%C3%B3n+Espa%C3%B1a"
+                target="_blank" rel="noopener noreferrer" class="text-center group cursor-pointer block"
+                aria-label="Abrir Hotel Mar de Fulles en Google Maps">
+                <div
+                    class="w-12 h-12 bg-gold-500/20 group-hover:bg-gold-500/40 rounded-xl flex items-center justify-center mx-auto mb-4 transition-colors duration-200">
+                    <svg class="w-6 h-6 text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                </div>
+                <h4 class="font-serif text-white text-lg mb-1 group-hover:text-gold-400 transition-colors duration-200">
+                    Ubicación</h4>
+                <p class="text-white/60 text-sm">Polígono 5, Parcela 69<br>Alfondeguilla, Castellón<br>12609, España
+                </p>
+                <span
+                    class="inline-flex items-center gap-1 text-gold-400/70 group-hover:text-gold-400 text-xs mt-2 transition-colors duration-200">
+                    <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                        <polyline points="15 3 21 3 21 9" />
+                        <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                    Ver en Google Maps
+                </span>
+            </a>
+
+            <div class="text-center">
+                <div class="w-12 h-12 bg-gold-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-6 h-6 text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                </div>
+                <h4 class="font-serif text-white text-lg mb-1">Fechas</h4>
+                <p class="text-white/60 text-sm">Llegada: Lunes 18 Mayo · 17h<br>Salida: Miércoles 20 Mayo · 13h</p>
+            </div>
+
+            <div class="text-center">
+                <div class="w-12 h-12 bg-gold-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-6 h-6 text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                        <polyline points="9 22 9 12 15 12 15 22" />
+                    </svg>
+                </div>
+                <h4 class="font-serif text-white text-lg mb-1">Alojamiento</h4>
+                <p class="text-white/60 text-sm">Todo incluido<br>(excepto traslados)<br>info@mardefulles.es</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===================== CTA FINAL ===================== -->
+<section class="py-24 px-6 bg-parchment text-center">
+    <div class="max-w-2xl mx-auto">
+        <p class="reveal text-gold-600 font-sans font-medium tracking-[0.2em] uppercase text-sm mb-4">El momento es
+            ahora</p>
+        <h2 class="reveal font-serif text-forest-800 text-4xl md:text-5xl mb-6">
+            Este retiro<br><em>es ese momento.</em>
+        </h2>
+        <p class="reveal text-forest-600 text-lg leading-relaxed mb-10">
+            Si todavía no nos conocemos, agendaremos una llamada para saber si es lo que estás buscando y si ajusta
+            a ti.
+        </p>
+        <div class="reveal flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="tel:+34664275129"
+                class="inline-flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-600 text-white font-semibold px-8 py-4 rounded-full text-base transition-colors duration-200 cursor-pointer shadow-lg">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                        d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.9 9.7 19.79 19.79 0 01.87 1.07 2 2 0 012.87 0h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0121.9 14l.02 2.92z" />
+                </svg>
+                Llamar: 664 275 129
+            </a>
+            <a href="#programa"
+                class="inline-flex items-center justify-center gap-2 border-2 border-forest-600 text-forest-700 hover:bg-forest-700 hover:text-white font-semibold px-8 py-4 rounded-full text-base transition-all duration-200 cursor-pointer">
+                Revisar el programa
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="bg-forest-900 pt-16 pb-8 px-6">
+    <div class="max-w-5xl mx-auto">
+
+        <!-- Bloque superior -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-12 border-b border-white/10">
+
+            <!-- Marca -->
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                        <circle cx="16" cy="16" r="15" stroke="#c9a84c" stroke-width="1.5" />
+                        <path d="M16 6 C10 6 7 11 7 16 C7 21 10 26 16 26 C22 26 25 21 25 16" stroke="#c9a84c"
+                            stroke-width="1.5" fill="none" stroke-linecap="round" />
+                    </svg>
+                    <span class="text-white/80 font-serif text-sm">Wellness Mindbeauty &amp; THE CLUB</span>
+                </div>
+                <p class="text-white/40 text-xs leading-relaxed">
+                    Retiro formativo para empresarias de la salud y el bienestar. Organizado por María Luján.
+                </p>
+            </div>
+
+            <!-- Contacto -->
+            <div>
+                <h5 class="text-white/60 text-xs font-semibold uppercase tracking-widest mb-4">Contacto</h5>
+                <ul class="space-y-2 text-white/50 text-xs">
+                    <li class="flex items-center gap-2">
+                        <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.9 9.7 19.79 19.79 0 01.87 1.07 2 2 0 012.87 0h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0121.9 14l.02 2.92z" />
+                        </svg>
+                        <a href="tel:+34664275129"
+                            class="hover:text-gold-400 transition-colors duration-200 cursor-pointer">664 275
+                            129</a>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        Hotel Mar de Fulles · Alfondeguilla, Castellón
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" />
+                            <line x1="16" y1="2" x2="16" y2="6" />
+                            <line x1="8" y1="2" x2="8" y2="6" />
+                            <line x1="3" y1="10" x2="21" y2="10" />
+                        </svg>
+                        18 – 20 de Mayo de 2026
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Reserva -->
+            <div>
+                <h5 class="text-white/60 text-xs font-semibold uppercase tracking-widest mb-4">Reservas</h5>
+                <p class="text-white/40 text-xs leading-relaxed mb-3">Pre-reserva del 50% antes del 23 de abril de
+                    2026. Plazas limitadas.</p>
+                <p class="text-white/40 text-xs font-mono">IBAN: ES81 2100 8755 5113 0041 4618</p>
+            </div>
+
+        </div>
+
+        <!-- Aviso legal -->
+        <div class="pt-8 pb-4 border-b border-white/10">
+            <h5 class="text-white/50 text-xs font-semibold uppercase tracking-widest mb-4">Información legal</h5>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-white/35 text-xs leading-relaxed">
+                <div>
+                    <p class="font-semibold text-white/50 mb-1">Responsable del tratamiento</p>
+                    <p>María Luján · Wellness Mindbeauty &amp; THE CLUB. En cumplimiento del Reglamento (UE)
+                        2016/679 (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales (LOPDGDD), los
+                        datos personales facilitados al realizar la reserva serán tratados con la finalidad de
+                        gestionar la inscripción al retiro y el envío de información relacionada con el evento.</p>
+                </div>
+                <div>
+                    <p class="font-semibold text-white/50 mb-1">Condiciones de reserva y cancelación</p>
+                    <p>La pre-reserva del 50% confirma la plaza. En caso de cancelación con más de 30 días de
+                        antelación, se reembolsará el 80% del importe abonado. Cancelaciones con menos de 30 días no
+                        son reembolsables, salvo causa mayor debidamente justificada. La organización se reserva el
+                        derecho a modificar horarios u orden de los contenidos sin que ello suponga alteración
+                        sustancial del programa.</p>
+                </div>
+                <div>
+                    <p class="font-semibold text-white/50 mb-1">Imagen y derechos</p>
+                    <p>Durante el retiro podrán realizarse fotografías o grabaciones con fines formativos y
+                        promocionales. Los participantes podrán manifestar su oposición en cualquier momento. Los
+                        contenidos, materiales y dinámicas del retiro son propiedad intelectual de Wellness
+                        Mindbeauty &amp; THE CLUB y no podrán reproducirse sin autorización expresa.</p>
+                </div>
+                <div>
+                    <p class="font-semibold text-white/50 mb-1">Derechos y reclamaciones</p>
+                    <p>Puede ejercer sus derechos de acceso, rectificación, supresión, limitación, portabilidad y
+                        oposición contactando en el número 664 275 129. Tiene derecho a presentar reclamación ante
+                        la Agencia Española de Protección de Datos (aepd.es). El presente retiro se rige por la
+                        legislación española, siendo competentes los juzgados y tribunales de Castellón de la Plana
+                        para cualquier litigio.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
+            <p class="text-white/25 text-xs">© 2026 Wellness Mindbeauty &amp; THE CLUB · María Luján. Todos los
+                derechos reservados.</p>
+            <p class="text-white/20 text-xs">Los horarios de la formación son orientativos.</p>
+        </div>
+
+    </div>
+</footer>
+
+<!-- ===================== SCRIPTS ===================== -->
+<script>
+    // ---- Navbar scroll ----
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 60) {
+            navbar.classList.add('nav-scrolled');
+        } else {
+            navbar.classList.remove('nav-scrolled');
+        }
+    });
+
+    // ---- Reveal on scroll ----
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) { e.target.classList.add('visible'); }
+        });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // ---- Day tabs ----
+    function showDay(day) {
+        ['lunes', 'martes', 'miercoles'].forEach(d => {
+            document.getElementById('day-' + d).classList.toggle('hidden', d !== day);
+            const tab = document.getElementById('tab-' + d);
+            if (d === day) {
+                tab.classList.add('text-white', 'bg-forest-700');
+                tab.classList.remove('text-forest-700', 'hover:bg-sage-200');
+                tab.setAttribute('aria-selected', 'true');
+            } else {
+                tab.classList.remove('text-white', 'bg-forest-700');
+                tab.classList.add('text-forest-700', 'hover:bg-sage-200');
+                tab.setAttribute('aria-selected', 'false');
+            }
+        });
+    }
+
+    // ---- Countdown ----
+    function updateCountdown() {
+        const target = new Date('2026-05-18T17:00:00');
+        const now = new Date();
+        const diff = target - now;
+        if (diff <= 0) {
+            document.getElementById('countdown').innerHTML = '<p class="text-white/70 text-sm font-medium">El retiro ha comenzado</p>';
+            return;
+        }
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const mins = Math.floor((diff / (1000 * 60)) % 60);
+        const secs = Math.floor((diff / 1000) % 60);
+        document.getElementById('cd-days').textContent = String(days).padStart(2, '0');
+        document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('cd-min').textContent = String(mins).padStart(2, '0');
+        document.getElementById('cd-sec').textContent = String(secs).padStart(2, '0');
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+</script>
